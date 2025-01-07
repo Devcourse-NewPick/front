@@ -10,30 +10,31 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
-const Title = ({ children, size, color })=>{
+const Title = ({ children, size, weight, color })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTitle, {
         size: size,
+        weight: weight,
         color: color,
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/common/Title.tsx",
-        lineNumber: 14,
-        columnNumber: 5
+        lineNumber: 15,
+        columnNumber: 3
     }, this);
 };
 _c = Title;
-const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].h1.withConfig({
+const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].p.withConfig({
     displayName: "Title__StyledTitle",
     componentId: "sc-ac090baf-0"
 })`
-  font-size: ${({ theme, size })=>theme.heading[size].fontSize};
-  font-weight: ${({ theme })=>theme.fontWeight.regular};
-  color: ${({ theme, color })=>color ? theme.color[color] : theme.color.text};
-  transition: color 0.3s ease;
-  margin: 0;
+	font-size: ${({ theme, size })=>theme.heading[size].fontSize};
+	font-weight: ${({ theme, weight })=>theme.fontWeight[weight || 'regular']};
+	color: ${({ theme, color })=>theme.color[color || 'text']};
+	transition: color 0.3s ease;
+	margin: 0;
 `;
 _c1 = StyledTitle;
 const __TURBOPACK__default__export__ = Title;

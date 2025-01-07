@@ -25,10 +25,10 @@ __turbopack_esm__({
     "GlobalStyle": (()=>GlobalStyle)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
-const Pretendard = "/fonts/Pretendard.woff2";
+const Pretendard = '/fonts/Pretendard.woff2';
 const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createGlobalStyle"]`
   @font-face {
     font-family: 'Pretendard';
@@ -208,7 +208,7 @@ const lightTheme = {
         primary: {
             color: '#FFFFFF',
             background: '#2705C0',
-            border: 'none',
+            border: '1px solid transparent',
             hover: {
                 color: '#2705C0',
                 background: 'transparent',
@@ -218,11 +218,11 @@ const lightTheme = {
         secondary: {
             color: '#000000',
             background: 'transparent',
-            border: 'none',
+            border: '1px solid transparent',
             hover: {
                 color: '#2705C0',
                 background: 'trasparent',
-                border: 'none'
+                border: '1px solid transparent'
             }
         },
         outline: {
@@ -232,17 +232,17 @@ const lightTheme = {
             hover: {
                 color: '#FFFFFF',
                 background: '#2705C0',
-                border: 'none'
+                border: '1px solid #2705C0'
             }
         },
         danger: {
             color: '#FFFFFF',
             background: '#E57373',
-            border: 'none',
+            border: '1px solid transparent',
             hover: {
                 color: '#FFFFFF',
                 background: '#D32F2F',
-                border: 'none'
+                border: '1px solid transparent'
             }
         }
     },
@@ -1382,16 +1382,32 @@ __turbopack_esm__({
 });
 const NAVIGATION = [
     {
-        title: "메뉴 1",
-        link: "#menu1"
+        title: '정치',
+        link: '#menu1'
     },
     {
-        title: "메뉴 2",
-        link: "#menu2"
+        title: '사회',
+        link: '#menu2'
     },
     {
-        title: "메뉴 3",
-        link: "#menu3"
+        title: '경제',
+        link: '#menu3'
+    },
+    {
+        title: '테크',
+        link: '#menu4'
+    },
+    {
+        title: '세계',
+        link: '#menu5'
+    },
+    {
+        title: '문화',
+        link: '#menu6'
+    },
+    {
+        title: '스포츠',
+        link: '#menu7'
     }
 ];
 }}),
@@ -1418,67 +1434,68 @@ const Navigation = ()=>{
                 }, index, false, {
                     fileName: "[project]/src/components/header/Navigation.tsx",
                     lineNumber: 9,
-                    columnNumber: 11
+                    columnNumber: 6
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/header/Navigation.tsx",
             lineNumber: 7,
-            columnNumber: 7
+            columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/header/Navigation.tsx",
         lineNumber: 6,
-        columnNumber: 5
+        columnNumber: 3
     }, this);
 };
 const StyledNavigation = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styled"].nav.withConfig({
     displayName: "Navigation__StyledNavigation",
     componentId: "sc-fec254c6-0"
 })`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  white-space: nowrap;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	white-space: nowrap;
 
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    list-style: none;
-    padding: 0;
-    margin: 0 1rem 0 1rem;
-    gap: 1.2rem;
-    line-height: 1;
+	ul {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		list-style: none;
+		padding: 0;
+		margin: 0 1rem 0 1rem;
+		gap: 1.2rem;
+		line-height: 1;
 
-    li {
-      padding: 0;
-      margin: 0;
-      cursor: pointer;
+		li {
+			padding: 0;
+			margin: 0;
+			cursor: pointer;
 
-      font-size: ${({ theme })=>theme.fontSize.small};
+			font-size: ${({ theme })=>theme.fontSize.small};
 
-      &:hover {
-        color: ${({ theme })=>theme.color.primary};
-      }
+			&:hover {
+				color: ${({ theme })=>theme.color.primary};
+				font-weight: ${({ theme })=>theme.fontWeight.semiBold};
+			}
 
-      a {
-        font-size: ${({ theme })=>theme.fontSize.medium};
-        font-weight: ${({ theme })=>theme.fontWeight.medium};
-        color: ${({ theme })=>theme.color.text};
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-    }
-  }
+			a {
+				font-size: ${({ theme })=>theme.fontSize.medium};
+				font-weight: ${({ theme })=>theme.fontWeight.medium};
+				color: ${({ theme })=>theme.color.text};
+				text-decoration: none;
+				transition: color 0.3s ease;
+			}
+		}
+	}
 
-  @media ${({ theme })=>theme.mediaQuery.mobile} {
-    display: none;
-  }
+	@media ${({ theme })=>theme.mediaQuery.mobile} {
+		display: none;
+	}
 `;
 const __TURBOPACK__default__export__ = Navigation;
 }}),

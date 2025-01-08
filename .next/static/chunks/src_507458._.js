@@ -107,10 +107,8 @@ const StyledInputText = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 	input {
 		display: flex;
 		width: 100%;
-		height: fit-content;
-		border: none;
-		outline: 1px solid ${({ theme })=>theme.color.line};
-		//box-shadow: ${({ theme })=>theme.shadow.light};
+		height: 3rem;
+		border: 1px solid ${({ theme })=>theme.color.border};
 		overflow: visible;
 		padding: 0.6rem 1.2rem;
 		line-height: 1.8;
@@ -121,8 +119,7 @@ const StyledInputText = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 		font-size: ${({ theme })=>theme.fontSize.small};
 
 		&:focus {
-			//box-shadow: ${({ theme })=>theme.shadow.default};
-			background: ${({ theme })=>theme.color.surface};
+			border-color: ${({ theme })=>theme.color.primary};
 		}
 
 		&::placeholder {
@@ -240,14 +237,14 @@ const StyledInputCheck = __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
 		appearance: none;
 		border-radius: 8px;
 		background: ${({ theme })=>theme.color.blur};
-		box-shadow: ${({ theme })=>theme.shadow.light};
+		border: 1px solid ${({ theme })=>theme.color.border};
 
 		&:checked {
 			background: ${({ theme })=>theme.color.primary};
 		}
 
 		&:focus {
-			box-shadow: ${({ theme })=>theme.shadow.default};
+			// box-shadow: ${({ theme })=>theme.shadow.default};
 		}
 	}
 `;
@@ -389,14 +386,14 @@ const StyledInputSelect = __TURBOPACK__imported__module__$5b$project$5d2f$node_m
 		align-items: center;
 		justify-content: space-between;
 		padding: 0.5rem 1rem;
-		box-shadow: ${({ theme })=>theme.shadow.light};
+		border: 1px solid ${({ theme })=>theme.color.border};
 		border-radius: ${({ theme })=>theme.borderRadius.default};
 		background: ${({ theme })=>theme.color.blur};
 		font-size: ${({ theme })=>theme.fontSize.small};
 		cursor: pointer;
 		line-height: 1.8;
-		height: 2.5rem;
-		z-index: 1000;
+		height: 3rem;
+		z-index: 1000;		
 
 		.select-arrow {
 			margin-left: 0.5rem;
@@ -421,7 +418,6 @@ const StyledInputSelect = __TURBOPACK__imported__module__$5b$project$5d2f$node_m
 
 		position: absolute;
 		top: 100%;
-		max-height: 10rem;
 		overflow-y: auto;
 		margin: 0;
 		padding: 0.5rem;
@@ -440,13 +436,13 @@ const StyledInputSelect = __TURBOPACK__imported__module__$5b$project$5d2f$node_m
 			white-space: nowrap;
 
 			&.selected {
-				background: ${({ theme })=>theme.color.blur};
-				box-shadow: ${({ theme })=>theme.shadow.light};
+				background: ${({ theme })=>theme.color.primary};
+				color: ${({ theme })=>theme.color.background};
 			}
 
 			&:hover {
 				background: ${({ theme })=>theme.color.secondary};
-				box-shadow: ${({ theme })=>theme.shadow.light};
+				color: ${({ theme })=>theme.color.background};
 			}
 		}
 	}
@@ -541,9 +537,10 @@ const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 
 	.custom-datepicker {
 		width: 100%;
-		border: 1px solid ${({ theme })=>theme.color.line};
+		height: 3rem;
+		border: 1px solid ${({ theme })=>theme.color.border};
 		padding: 0.6rem 1.2rem;
-		background-color: ${({ theme })=>theme.color.blur};
+		background-color: transparent;
 		font-size: ${({ theme })=>theme.fontSize.small};
 		color: ${({ theme })=>theme.color.text};
 		outline: none;
@@ -555,42 +552,51 @@ const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 		&:focus {
 			border-color: ${({ theme })=>theme.color.primary};
 		}
+
+		&::placeholder {
+			color: ${({ theme })=>theme.color.lightGrey};
+		}
 	}
 
 	.react-datepicker__header {
 		background-color: ${({ theme })=>theme.color.secondary};
-		color: ${({ theme })=>theme.color.text};
+		color: ${({ theme })=>theme.color.background};
 		border-bottom: none;
 	}
 
 	.react-datepicker__current-month,
 	.react-datepicker-time__header {
 		font-size: ${({ theme })=>theme.fontSize.medium};
+		color: ${({ theme })=>theme.color.background};
+	}
+	
+	.react-datepicker__day-name {
+		color: ${({ theme })=>theme.color.background};;
 	}
 
 	.react-datepicker__day--selected,
 	.react-datepicker__day--keyboard-selected {
-		background-color: ${({ theme })=>theme.color.secondary};
-		color: ${({ theme })=>theme.color.onSecondary};
+		background-color: ${({ theme })=>theme.color.primary};
+		color: ${({ theme })=>theme.color.background};
 		border-radius: ${({ theme })=>theme.borderRadius.small};
 	}
 
 	.react-datepicker__day:hover {
-		background-color: ${({ theme })=>theme.color.background};
-		color: ${({ theme })=>theme.color.onPrimary};
+		background-color: ${({ theme })=>theme.color.secondary};
+		color: ${({ theme })=>theme.color.background};
 	}
 
 	.react-datepicker__year-dropdown,
 	.react-datepicker__month-dropdown {
-		background-color: ${({ theme })=>theme.color.surface};
+		background-color: ${({ theme })=>theme.color.background};
 		color: ${({ theme })=>theme.color.text};
 		border: 1px solid ${({ theme })=>theme.color.border};
 	}
 
 	.react-datepicker__year-option:hover,
 	.react-datepicker__month-option:hover {
-		background-color: ${({ theme })=>theme.color.primary};
-		color: ${({ theme })=>theme.color.onPrimary};
+		background-color: ${({ theme })=>theme.color.secondary};
+		color: ${({ theme })=>theme.color.background};
 	}
 `;
 _c1 = StyledInputDate;
@@ -642,7 +648,7 @@ const StyledLoader = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 	svg {
 		width: ${({ theme, $size })=>$size ? theme.fontSize[$size] : '4rem'};
 		height: ${({ theme, $size })=>$size ? theme.fontSize[$size] : '4rem'};
-		fill: ${({ theme })=>theme.color.primary};
+		fill: ${({ theme })=>theme.color.secondary};
 		animation: rotate 1s linear infinite;
 	}
 

@@ -110,7 +110,7 @@ __turbopack_esm__({
 const lightTheme = {
     name: 'light',
     color: {
-        primary: '#2705C0',
+        primary: '#3610e1',
         secondary: '#5564F1',
         background: '#FFFFFF',
         surface: '#F9F9F9',
@@ -192,25 +192,25 @@ const lightTheme = {
         primary: {
             color: '#FFFFFF',
             fontWeight: '700',
-            background: '#2705C0',
-            border: '1px solid #2705C0',
+            background: '#3610e1',
+            border: '1px solid #3610e1',
             hover: {
-                color: '#2705C0',
+                color: '#3610e1',
                 fontWeight: '700',
                 background: 'transparent',
-                border: '1px solid #2705C0'
+                border: '1px solid #3610e1'
             }
         },
         secondary: {
-            color: '#2705C0',
+            color: '#3610e1',
             fontWeight: '700',
             background: 'transparent',
-            border: '1px solid #2705C0',
+            border: '1px solid #3610e1',
             hover: {
                 color: '#ffffff',
                 fontWeight: '700',
                 background: '#2705C0',
-                border: '1px solid #2705C0'
+                border: '1px solid #3610e1'
             }
         },
         mono: {
@@ -247,6 +247,16 @@ const lightTheme = {
                 fontWeight: '700',
                 background: '#D32F2F',
                 border: '1px solid #D32F2F'
+            }
+        },
+        default: {
+            color: '#000000',
+            fontWeight: '700',
+            background: 'transparent',
+            border: 'none',
+            hover: {
+                color: '#3610e1',
+                background: '#f4f1ff'
             }
         }
     },
@@ -345,6 +355,16 @@ const darkTheme = {
                 fontWeight: '600',
                 background: '#D32F2F',
                 border: '1px solid #D32F2F'
+            }
+        },
+        default: {
+            color: '#f1f1f1',
+            fontWeight: '700',
+            background: 'transparent',
+            border: 'none',
+            hover: {
+                color: '#9ca9ff',
+                background: '#0f1d7a'
             }
         }
     }
@@ -552,9 +572,9 @@ const StyledButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 	padding: ${({ theme, size })=>theme.button[size ?? 'small'].padding};
 	gap: ${({ theme, size })=>theme.button[size ?? 'small'].gap};
 
-	color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].color};
-	background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].background};
-	border: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].border};
+	color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].color};
+	background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].background};
+	border: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].border};
 	border-radius: ${({ theme })=>theme.borderRadius.flat};
 	opacity: ${({ disabled })=>disabled ? 0.5 : 1};
 	pointer-events: ${({ disabled })=>disabled ? 'none' : 'auto'};
@@ -574,15 +594,15 @@ const StyledButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 		height: calc(${({ theme, size })=>theme.button[size ?? 'small'].fontSize} * 1.2);
 
 		&:hover {
-			color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.color};
-			background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.background};
+			color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].hover.color};
+			background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].hover.background};
 		}
 	}
 
 	&:hover {
-		color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.color};
-		background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.background};
-		border: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.border};
+		color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].hover.color};
+		background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].hover.background};
+		border: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'default'].hover.border};
 		// font-weight: ${({ theme })=>theme.fontWeight.semiBold};
 	}
 
@@ -1024,8 +1044,14 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/components/common/logos/logo'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -1037,16 +1063,12 @@ const Logo = ()=>{
         href: "/",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledLogo, {
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    src: logo,
-                    alt: "logo",
-                    width: 100,
-                    height: 36,
-                    className: "desktop-logo",
-                    priority: true
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PCLogo, {
+                    height: "36px",
+                    width: "100px"
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Logo.tsx",
-                    lineNumber: 14,
+                    lineNumber: 15,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1058,18 +1080,18 @@ const Logo = ()=>{
                     priority: true
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Logo.tsx",
-                    lineNumber: 15,
+                    lineNumber: 17,
                     columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/common/Logo.tsx",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/common/Logo.tsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 3
     }, this);
 };
@@ -1421,10 +1443,7 @@ const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
   cursor: pointer;
 
   button {
-    background: none;
-    border: none;
     cursor: pointer;
-    outline: none;
 
     svg {
       font-size: ${({ theme })=>theme.fontSize.large};
@@ -1474,6 +1493,10 @@ const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
           padding: 0;
           margin: 0;
         }
+          
+          button {
+              background: rebeccapurple;
+          }
 
         &:hover {
           color: ${({ theme })=>theme.color.primary};
@@ -1695,7 +1718,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
-"use client";
+'use client';
 ;
 ;
 ;
@@ -1707,17 +1730,22 @@ const ThemeSwitcher = ({ className, styles })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledThemeSwitcher, {
         className: className,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            scheme: "default",
             size: "small",
             onClick: toggleTheme,
             styles: styles,
-            children: themeName === "light" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MdLightMode"], {}, void 0, false, {
+            children: themeName === 'light' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MdLightMode"], {
+                className: "light"
+            }, void 0, false, {
                 fileName: "[project]/src/components/header/ThemeSwitcher.tsx",
                 lineNumber: 19,
-                columnNumber: 34
-            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MdDarkMode"], {}, void 0, false, {
+                columnNumber: 35
+            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MdDarkMode"], {
+                className: "dark"
+            }, void 0, false, {
                 fileName: "[project]/src/components/header/ThemeSwitcher.tsx",
                 lineNumber: 19,
-                columnNumber: 52
+                columnNumber: 71
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/header/ThemeSwitcher.tsx",
@@ -1736,9 +1764,13 @@ const StyledThemeSwitcher = __TURBOPACK__imported__module__$5b$project$5d2f$node
     displayName: "ThemeSwitcher__StyledThemeSwitcher",
     componentId: "sc-785fb4a6-0"
 })`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        fill: ${({ theme })=>theme.color.text};;
+    }
 `;
 _c1 = StyledThemeSwitcher;
 const __TURBOPACK__default__export__ = /*#__PURE__*/ _c2 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].memo(ThemeSwitcher);
@@ -1906,12 +1938,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/Navigation.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/Drawer.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$ThemeSwitcher$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/ThemeSwitcher.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 'use client';
-;
 ;
 ;
 ;
@@ -1942,23 +1972,23 @@ const Header = ()=>{
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
                                 lineNumber: 30,
-                                columnNumber: 6
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Logo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
                                 lineNumber: 31,
-                                columnNumber: 6
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/common/Header.tsx",
                         lineNumber: 29,
-                        columnNumber: 5
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/components/common/Header.tsx",
                         lineNumber: 33,
-                        columnNumber: 5
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "right-section",
@@ -1968,23 +1998,18 @@ const Header = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
                                 lineNumber: 35,
-                                columnNumber: 6
+                                columnNumber: 11
                             }, this),
                             isLogin ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 className: "auth",
                                 toggleButton: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaUserCircle"], {
-                                            className: "userCircle"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/common/Header.tsx",
-                                            lineNumber: 42,
-                                            columnNumber: 11
-                                        }, void 0)
+                                        scheme: "secondary",
+                                        children: "내 정보"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/common/Header.tsx",
                                         lineNumber: 41,
-                                        columnNumber: 10
+                                        columnNumber: 19
                                     }, void 0)
                                 }, void 0, false),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1993,33 +2018,35 @@ const Header = ()=>{
                                             className: "desktop-hidden"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
-                                            lineNumber: 48,
-                                            columnNumber: 9
+                                            lineNumber: 49,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/myPage",
                                             className: "item",
-                                            children: "마이 페이지"
+                                            children: "마이페이지"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
-                                            lineNumber: 49,
-                                            columnNumber: 9
+                                            lineNumber: 50,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            scheme: "default",
                                             onClick: toggleLogin,
                                             children: "로그아웃"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
-                                            lineNumber: 52,
-                                            columnNumber: 9
+                                            lineNumber: 51,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
                                 lineNumber: 37,
-                                columnNumber: 7
+                                columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                scheme: "secondary",
                                 onClick: toggleLogin,
                                 style: {
                                     width: '5rem'
@@ -2027,11 +2054,11 @@ const Header = ()=>{
                                 children: "로그인"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
-                                lineNumber: 56,
-                                columnNumber: 7
+                                lineNumber: 57,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                scheme: "secondary",
+                                scheme: "primary",
                                 style: {
                                     width: '5rem'
                                 },
@@ -2039,20 +2066,20 @@ const Header = ()=>{
                                 children: "구독하기"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
-                                lineNumber: 60,
-                                columnNumber: 6
+                                lineNumber: 61,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/common/Header.tsx",
                         lineNumber: 34,
-                        columnNumber: 5
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/common/Header.tsx",
                 lineNumber: 28,
-                columnNumber: 4
+                columnNumber: 7
             }, this),
             isOpen && modalType === 'subscribe' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 isOpen: isOpen,
@@ -2061,22 +2088,22 @@ const Header = ()=>{
                     children: "구독하기 모달 내용"
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Header.tsx",
-                    lineNumber: 67,
-                    columnNumber: 6
+                    lineNumber: 68,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/common/Header.tsx",
-                lineNumber: 66,
-                columnNumber: 5
+                lineNumber: 67,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/common/Header.tsx",
         lineNumber: 27,
-        columnNumber: 3
+        columnNumber: 5
     }, this);
 };
-_s(Header, "dq6SmHeio0VwDeSoxJUHOHmTTco=", false, function() {
+_s(Header, "+ao59XAXgwlr5Vp1W5+C+3jloes=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useModal$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useModal"]
     ];
@@ -2086,64 +2113,68 @@ const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
     displayName: "Header__StyledHeader",
     componentId: "sc-5944b458-0"
 })`
-	width: 100%;
-	padding: 0;
-	margin: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
-	-ms-overflow-style: none;
-	::-webkit-scrollbar {
-		display: none;
-	}
+    -ms-overflow-style: none;
 
-	background: ${({ theme })=>theme.color.background};
-	border-bottom: 1px solid ${({ theme })=>theme.color.border};
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
-	.header {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+    background: ${({ theme })=>theme.color.background};
+    border-bottom: 1px solid ${({ theme })=>theme.color.border};
 
-		margin: 0 auto;
-		padding: 0.5rem 1rem;
-		gap: 1rem;
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-		width: 100%;
-		max-width: ${({ theme })=>theme.layout.width.large};
-	}
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        gap: 1rem;
 
-	.left-section {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 1rem;
-	}
+        width: 100%;
+        max-width: ${({ theme })=>theme.layout.width.large};
+    }
 
-	.right-section {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 1rem;
+    .left-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
 
-		.userCircle {
-			border-radius: ${({ theme })=>theme.borderRadius.circle};
-			object-fit: cover;
-		}
-	}
+    .right-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
 
-	.mobile-hidden {
-		@media ${({ theme })=>theme.mediaQuery.mobile} {
-			display: none;
-		}
-	}
+        .userCircle {
+            border-radius: ${({ theme })=>theme.borderRadius.circle};
+            object-fit: cover;
+        }
+	    button {
+		    font-size: ${({ theme })=>theme.fontSize.small};
+	    }
+    }
 
-	.desktop-hidden {
-		display: none;
+    .mobile-hidden {
+        @media ${({ theme })=>theme.mediaQuery.mobile} {
+            display: none;
+        }
+    }
 
-		@media ${({ theme })=>theme.mediaQuery.mobile} {
-			display: block;
-		}
-	}
+    .desktop-hidden {
+        display: none;
+
+        @media ${({ theme })=>theme.mediaQuery.mobile} {
+            display: block;
+        }
+    }
 `;
 _c1 = StyledHeader;
 const __TURBOPACK__default__export__ = Header;

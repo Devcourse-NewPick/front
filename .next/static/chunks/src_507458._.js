@@ -545,10 +545,6 @@ const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 		color: ${({ theme })=>theme.color.text};
 		outline: none;
 
-		&:hover {
-			border-color: ${({ theme })=>theme.color.primary};
-		}
-
 		&:focus {
 			border-color: ${({ theme })=>theme.color.primary};
 		}

@@ -138,14 +138,17 @@ const lightTheme = {
         error: '#E57373',
         warning: '#FFB300',
         text: '#000000',
-        border: '#E0E0E0'
+        subtext: '#444444',
+        lightGrey: '#999999',
+        line: '#d9d9d9',
+        border: '#999999'
     },
     fontSize: {
-        extraSmall: '0.8rem',
+        extraSmall: '0.875rem',
         small: '1rem',
-        medium: '1.2rem',
-        large: '1.5rem',
-        extraLarge: '2rem'
+        medium: '1.125rem',
+        large: '1.375rem',
+        extraLarge: '1.75rem'
     },
     fontWeight: {
         light: '400',
@@ -157,16 +160,16 @@ const lightTheme = {
     },
     heading: {
         extraLarge: {
-            fontSize: '2rem'
+            fontSize: '3rem'
         },
         large: {
-            fontSize: '1.5rem'
+            fontSize: '2.25rem'
         },
         medium: {
-            fontSize: '1.2rem'
+            fontSize: '2rem'
         },
         small: {
-            fontSize: '1rem'
+            fontSize: '1.75rem'
         }
     },
     borderRadius: {
@@ -179,70 +182,100 @@ const lightTheme = {
     },
     button: {
         extraLarge: {
-            fontSize: '1.5rem',
+            fontSize: '1.125rem',
             padding: '1rem 2rem',
-            gap: '1.5rem'
+            // width: '13.75rem',
+            // height: '3.75rem',
+            gap: '0.75rem'
         },
         large: {
-            fontSize: '1.3rem',
+            fontSize: '1rem',
             padding: '1rem 1.5rem',
-            gap: '1rem'
+            // width: '12rem',
+            // height: '3.25rem',
+            gap: '0.75rem'
         },
         medium: {
-            fontSize: '1.2rem',
+            fontSize: '1rem',
             padding: '0.8rem 1.2rem',
-            gap: '0.5rem'
+            // width: '10.5rem',
+            // height: '3.125rem',
+            gap: '0.75rem'
         },
         small: {
-            fontSize: '1rem',
+            fontSize: '0.875rem',
             padding: '0.5rem 0.8rem',
-            gap: '0.3rem'
+            // width: '8rem',
+            // height: '2.75rem',
+            gap: '0.75rem'
         },
         extraSmall: {
-            fontSize: '0.8rem',
+            fontSize: '0.875rem',
             padding: '0 0.5rem',
-            gap: '0.2rem'
+            // width: '5.75rem',
+            // height: '2.125rem',
+            gap: '0.75rem'
         }
     },
     buttonScheme: {
         primary: {
             color: '#FFFFFF',
+            fontWeight: '600',
             background: '#2705C0',
-            border: 'none',
+            border: '1px solid #2705C0',
             hover: {
                 color: '#2705C0',
+                fontWeight: '700',
                 background: 'transparent',
-                border: 'none'
+                border: '1px solid #2705C0'
             }
         },
         secondary: {
-            color: '#000000',
-            background: 'transparent',
-            border: 'none',
-            hover: {
-                color: '#2705C0',
-                background: 'trasparent',
-                border: 'none'
-            }
-        },
-        outline: {
             color: '#2705C0',
+            fontWeight: '700',
             background: 'transparent',
             border: '1px solid #2705C0',
             hover: {
-                color: '#FFFFFF',
+                color: '#ffffff',
+                fontWeight: '600',
                 background: '#2705C0',
                 border: '1px solid #2705C0'
             }
         },
+        mono: {
+            color: '#ffffff',
+            fontWeight: '600',
+            background: '#222222',
+            border: '1px solid #222222',
+            hover: {
+                color: '#444444',
+                fontWeight: '700',
+                background: 'transparent',
+                border: '1px solid #999999'
+            }
+        },
+        monoOutline: {
+            color: '#444444',
+            fontWeight: '700',
+            background: 'transparent',
+            border: '1px solid #999999',
+            hover: {
+                color: '#ffffff',
+                fontWeight: '600',
+                background: '#222222',
+                border: '1px solid #222222'
+            }
+        },
         danger: {
             color: '#FFFFFF',
+            fontWeight: '700',
             background: '#E57373',
-            border: 'none',
+            border: '1px solid #E57373',
             hover: {
-                color: '#FFFFFF',
+                color: '#ffffff',
+                fontWeight: '700',
                 background: '#D32F2F',
-                border: 'none'
+                border: '1px solid #D32F2F'
             }
         }
     },
@@ -269,55 +302,78 @@ const darkTheme = {
     name: 'dark',
     color: {
         primary: '#8C9EFF',
-        secondary: '#1F36B4',
+        secondary: '#364ECC',
         background: '#121212',
         surface: '#1E1E1E',
         disabled: '#555555',
         success: '#66BB6A',
         error: '#EF5350',
         warning: '#FFB300',
-        text: '#F1F1F1',
-        border: '#1E1E1E'
+        text: '#000000',
+        subtext: '#f1f1f1',
+        lightGrey: '#999999',
+        line: '#2D2D2D',
+        border: '#3C3C3C'
     },
     buttonScheme: {
         primary: {
-            color: '#FFFFFF',
-            background: '#2705C0',
-            border: 'none',
+            color: '#121212',
+            fontWeight: '700',
+            background: '#8C9EFF',
+            border: '1px solid #8C9EFF',
             hover: {
-                color: '#FFFFFF',
-                background: '#2F00FF',
-                border: 'none'
+                color: '#8C9EFF',
+                fontWeight: '600',
+                background: 'transparent',
+                border: '1px solid #8C9EFF'
             }
         },
         secondary: {
-            color: '#FFFFFF',
+            color: '#8C9EFF',
+            fontWeight: '600',
             background: 'transparent',
-            border: 'none',
+            border: '1px solid #8C9EFF',
             hover: {
-                color: '#2F00FF',
-                background: 'transparent',
-                border: 'none'
+                color: '#121212',
+                fontWeight: '700',
+                background: '#8C9EFF',
+                border: '1px solid #8C9EFF'
             }
         },
-        outline: {
-            color: '#FFFFFF',
-            background: 'transparent',
-            border: '1px solid #FFFFFF',
+        mono: {
+            color: '#f1f1f1',
+            fontWeight: '700',
+            background: '#222222',
+            border: '1px solid #222222',
             hover: {
-                color: '#2F00FF',
+                color: '#999999',
+                fontWeight: '600',
                 background: 'transparent',
-                border: '1px solid #2F00FF'
+                border: '1px solid #444444'
+            }
+        },
+        monoOutline: {
+            color: '#999999',
+            fontWeight: '600',
+            background: 'transparent',
+            border: '1px solid #444444',
+            hover: {
+                color: '#f1f1f1',
+                fontWeight: '700',
+                background: '#222222',
+                border: '1px solid #222222'
             }
         },
         danger: {
             color: '#FFFFFF',
-            background: '#D32F2F',
-            border: 'none',
+            fontWeight: '600',
+            background: '#EF5350',
+            border: '1px solid #EF5350',
             hover: {
                 color: '#FFFFFF',
-                background: '#E57373',
-                border: 'none'
+                fontWeight: '600',
+                background: '#D32F2F',
+                border: '1px solid #D32F2F'
             }
         }
     }
@@ -528,7 +584,7 @@ const StyledButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 		color: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.color};
 		background: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.background};
 		border: ${({ theme, scheme })=>theme.buttonScheme[scheme ?? 'secondary'].hover.border};
-		font-weight: ${({ theme })=>theme.fontWeight.semiBold};
+		// font-weight: ${({ theme })=>theme.fontWeight.semiBold};
 	}
 
 	&[data-tooltip]:hover::after,
@@ -547,7 +603,7 @@ const StyledButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 		text-align: left;
 
 		background: ${({ theme })=>theme.color.surface};
-		color: ${({ theme })=>theme.color.onSurface};
+		color: ${({ theme })=>theme.color.lightGrey};
 		font-size: ${({ theme })=>theme.fontSize.small};
 		border-radius: ${({ theme })=>theme.borderRadius.medium};
 		box-shadow: ${({ theme })=>theme.shadow.soft};
@@ -1833,7 +1889,7 @@ const Header = ()=>{
                                 columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                scheme: "outline",
+                                scheme: "secondary",
                                 style: {
                                     width: '5rem'
                                 },

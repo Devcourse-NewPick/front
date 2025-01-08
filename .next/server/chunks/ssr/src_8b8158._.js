@@ -100,24 +100,24 @@ const StyledInputText = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 		width: 100%;
 		height: fit-content;
 		border: none;
-		outline: none;
-		box-shadow: ${({ theme })=>theme.shadow.light};
+		outline: 1px solid ${({ theme })=>theme.color.line};
+		//box-shadow: ${({ theme })=>theme.shadow.light};
 		overflow: visible;
 		padding: 0.6rem 1.2rem;
 		line-height: 1.8;
 
 		color: ${({ theme })=>theme.color.text};
-		background: ${({ theme })=>theme.color.blur};
+		background: ${({ theme })=>theme.color.background};
 		border-radius: ${({ theme })=>theme.borderRadius.default};
 		font-size: ${({ theme })=>theme.fontSize.small};
 
 		&:focus {
-			box-shadow: ${({ theme })=>theme.shadow.default};
+			//box-shadow: ${({ theme })=>theme.shadow.default};
 			background: ${({ theme })=>theme.color.surface};
 		}
 
 		&::placeholder {
-			color: ${({ theme })=>theme.color.textSecondary};
+			color: ${({ theme })=>theme.color.lightGrey};
 		}
 	}
 `;
@@ -494,13 +494,11 @@ const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 
 	.custom-datepicker {
 		width: 100%;
-		border: none;
+		border: 1px solid ${({ theme })=>theme.color.line};
 		padding: 0.6rem 1.2rem;
-		border-radius: ${({ theme })=>theme.borderRadius.medium};
 		background-color: ${({ theme })=>theme.color.blur};
 		font-size: ${({ theme })=>theme.fontSize.small};
 		color: ${({ theme })=>theme.color.text};
-		box-shadow: ${({ theme })=>theme.shadow.light};
 		outline: none;
 
 		&:hover {
@@ -509,13 +507,12 @@ const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 
 		&:focus {
 			border-color: ${({ theme })=>theme.color.primary};
-			box-shadow: ${({ theme })=>theme.shadow.medium};
 		}
 	}
 
 	.react-datepicker__header {
-		background-color: ${({ theme })=>theme.color.primary};
-		color: ${({ theme })=>theme.color.onPrimary};
+		background-color: ${({ theme })=>theme.color.secondary};
+		color: ${({ theme })=>theme.color.text};
 		border-bottom: none;
 	}
 
@@ -755,15 +752,15 @@ const TestPage = ()=>{
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        children: "Outline"
+                        children: "Mono"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
                         lineNumber: 63,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        scheme: "outline",
-                        onClick: ()=>alert('Outline Button clicked!'),
+                        scheme: "mono",
+                        onClick: ()=>alert('Mono Button clicked!'),
                         children: "클릭"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
@@ -771,10 +768,26 @@ const TestPage = ()=>{
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        children: "Danger"
+                        children: "Mono Outline"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
                         lineNumber: 67,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        scheme: "monoOutline",
+                        onClick: ()=>alert('Mono Outline Button clicked!'),
+                        children: "클릭"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/test/page.tsx",
+                        lineNumber: 68,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        children: "Danger"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/test/page.tsx",
+                        lineNumber: 71,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -783,7 +796,7 @@ const TestPage = ()=>{
                         children: "클릭"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 68,
+                        lineNumber: 72,
                         columnNumber: 5
                     }, this)
                 ]
@@ -794,7 +807,7 @@ const TestPage = ()=>{
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 73,
+                lineNumber: 77,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -803,7 +816,7 @@ const TestPage = ()=>{
                         children: "Title"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 75,
+                        lineNumber: 79,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Title$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -811,7 +824,7 @@ const TestPage = ()=>{
                         children: "ExtraLarge 타이틀"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 76,
+                        lineNumber: 80,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Title$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -819,7 +832,7 @@ const TestPage = ()=>{
                         children: "Large 타이틀"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 77,
+                        lineNumber: 81,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Title$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -827,7 +840,7 @@ const TestPage = ()=>{
                         children: "Medium 타이틀"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 78,
+                        lineNumber: 82,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Title$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -835,18 +848,18 @@ const TestPage = ()=>{
                         children: "Small 타이틀"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 79,
+                        lineNumber: 83,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 74,
+                lineNumber: 78,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 82,
+                lineNumber: 86,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -855,7 +868,7 @@ const TestPage = ()=>{
                         children: "InputText"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 84,
+                        lineNumber: 88,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$InputText$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -863,18 +876,18 @@ const TestPage = ()=>{
                         placeholder: "테스트"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 85,
+                        lineNumber: 89,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 83,
+                lineNumber: 87,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 88,
+                lineNumber: 92,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -883,7 +896,7 @@ const TestPage = ()=>{
                         children: "InputDate"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 90,
+                        lineNumber: 94,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$InputDate$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -891,7 +904,7 @@ const TestPage = ()=>{
                         onChange: handleDateChange
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 91,
+                        lineNumber: 95,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -901,18 +914,18 @@ const TestPage = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 92,
+                        lineNumber: 96,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 89,
+                lineNumber: 93,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 95,
+                lineNumber: 99,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -921,7 +934,7 @@ const TestPage = ()=>{
                         children: "InputCheck"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 97,
+                        lineNumber: 101,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$InputCheck$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -931,7 +944,7 @@ const TestPage = ()=>{
                         checked: isChecked
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 98,
+                        lineNumber: 102,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -941,18 +954,18 @@ const TestPage = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 104,
+                        lineNumber: 108,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 96,
+                lineNumber: 100,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 107,
+                lineNumber: 111,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -961,7 +974,7 @@ const TestPage = ()=>{
                         children: "InputSelect"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 109,
+                        lineNumber: 113,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$InputSelect$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -985,7 +998,7 @@ const TestPage = ()=>{
                         onChange: handleSelectChange
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 110,
+                        lineNumber: 114,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -995,18 +1008,18 @@ const TestPage = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 121,
+                        lineNumber: 125,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 108,
+                lineNumber: 112,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {}, void 0, false, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 124,
+                lineNumber: 128,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1015,18 +1028,18 @@ const TestPage = ()=>{
                         children: "Loader"
                     }, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 126,
+                        lineNumber: 130,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Loader$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/test/page.tsx",
-                        lineNumber: 127,
+                        lineNumber: 131,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/test/page.tsx",
-                lineNumber: 125,
+                lineNumber: 129,
                 columnNumber: 4
             }, this)
         ]
@@ -1060,7 +1073,7 @@ const StyledTestPage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
 
 		p {
 			margin-top: 0.5rem;
-			color: ${({ theme })=>theme.color.secondaryText};
+			color: ${({ theme })=>theme.color.subtext};
 		}
 	}
 

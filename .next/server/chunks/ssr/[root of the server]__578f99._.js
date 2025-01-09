@@ -1114,24 +1114,18 @@ const Logo = ({ logoType })=>{
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledLogo, {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$logos$2f$LogoSVG$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PCLogo"], {
-                    className: logoType === 'footer-logo' ? 'footer-logo desktop-logo' : 'desktop-logo'
+                    className: logoType === 'footer-logo' ? 'footer-desktop-logo' : 'desktop-logo'
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Logo.tsx",
                     lineNumber: 15,
                     columnNumber: 9
                 }, this),
-                logoType === 'footer-logo' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$logos$2f$LogoSVG$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PCLogo"], {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$logos$2f$LogoSVG$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MoLogo"], {
                     className: logoType === 'footer-logo' ? 'footer-mobile-logo' : 'mobile-logo'
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Logo.tsx",
-                    lineNumber: 17,
-                    columnNumber: 11
-                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$logos$2f$LogoSVG$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MoLogo"], {
-                    className: "mobile-logo"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/common/Logo.tsx",
-                    lineNumber: 19,
-                    columnNumber: 11
+                    lineNumber: 16,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
@@ -1156,7 +1150,7 @@ const StyledLogo = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
     display: flex;
     justify-content: center;
 
-    .mobile-logo {
+    .mobile-logo, .footer-mobile-logo {
         display: none;
     }
 
@@ -1164,17 +1158,15 @@ const StyledLogo = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
         height: 22px;
     }
 
-    .footer-logo {
+    .footer-desktop-logo {
         color: ${({ theme })=>theme.color.subtext};
         height: 32px;
     }
+    
 
-    .footer-mobile-logo {
-        display: none;
-    }
 
     @media ${({ theme })=>theme.mediaQuery.tablet} {
-        .desktop-logo {
+        .desktop-logo, .footer-desktop-logo {
             display: none;
         }
 
@@ -1187,7 +1179,7 @@ const StyledLogo = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
         .footer-mobile-logo {
             display: block;
             color: ${({ theme })=>theme.color.subtext};
-            height: 32px;
+            height: 48px;
         }
     }
 
@@ -2276,7 +2268,7 @@ const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 
 	width: 100%;
 	margin-top: auto;
-	padding: 4rem 0 3rem 0;
+	padding: 3rem 0;
 	background: ${({ theme })=>theme.color.surface};
 	border-top: 1px solid ${({ theme })=>theme.color.border};
 

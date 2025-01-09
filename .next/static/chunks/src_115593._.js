@@ -43,6 +43,12 @@ const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
   
   ul, li {
 	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+	  margin: 0;
   }
 `;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1582,7 +1588,6 @@ const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
 })`
     position: relative;
     cursor: pointer;
-    display: none;
 
     button {
         cursor: pointer;
@@ -1648,6 +1653,8 @@ const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
     }
 
     &.drawer {
+        display: none;
+
         .panel {
             transform-origin: top;
             transform: ${({ $open })=>$open ? 'scaleY(1)' : 'scaleY(0)'};
@@ -2091,10 +2098,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/Navigation.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/Drawer.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$ThemeSwitcher$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/ThemeSwitcher.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -2158,11 +2167,20 @@ const Header = ()=>{
                                 toggleButton: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         scheme: "secondary",
-                                        children: "내 정보"
-                                    }, void 0, false, {
+                                        children: [
+                                            "내 정보",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaUserCircle"], {
+                                                className: "userCircle"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/common/Header.tsx",
+                                                lineNumber: 43,
+                                                columnNumber: 23
+                                            }, void 0)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/common/Header.tsx",
                                         lineNumber: 41,
-                                        columnNumber: 19
+                                        columnNumber: 21
                                     }, void 0)
                                 }, void 0, false),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2172,16 +2190,16 @@ const Header = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
                                             lineNumber: 49,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/myPage",
+                                            href: "/mypage",
                                             className: "item",
                                             children: "마이페이지"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
                                             lineNumber: 50,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             scheme: "default",
@@ -2190,14 +2208,14 @@ const Header = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
                                             lineNumber: 51,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
                                 lineNumber: 37,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 scheme: "secondary",
                                 onClick: toggleLogin,
@@ -2207,8 +2225,8 @@ const Header = ()=>{
                                 children: "로그인"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
-                                lineNumber: 57,
-                                columnNumber: 13
+                                lineNumber: 59,
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 scheme: "primary",
@@ -2219,7 +2237,7 @@ const Header = ()=>{
                                 children: "구독하기"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
-                                lineNumber: 61,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -2241,12 +2259,12 @@ const Header = ()=>{
                     children: "구독하기 모달 내용"
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Header.tsx",
-                    lineNumber: 68,
+                    lineNumber: 70,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/common/Header.tsx",
-                lineNumber: 67,
+                lineNumber: 69,
                 columnNumber: 9
             }, this)
         ]

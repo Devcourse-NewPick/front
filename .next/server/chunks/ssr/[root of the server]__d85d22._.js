@@ -44,6 +44,9 @@ const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
     padding: 0;
     color: ${({ theme })=>theme.color.text};
     background: ${({ theme })=>theme.color.background};
+	  overflow-x: hidden;
+	  overflow-y: hidden;
+
   }
 
   a {
@@ -56,6 +59,12 @@ const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
   
   ul, li {
 	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+	  margin: 0;
   }
 `;
 }}),
@@ -294,15 +303,15 @@ const lightTheme = {
     },
     layout: {
         width: {
-            large: '1020px',
-            medium: '760px',
-            small: '320px'
+            large: '1024px',
+            medium: '768px',
+            small: '375px'
         }
     },
     mediaQuery: {
-        mobile: '(max-width: 768px)',
-        tablet: '(max-width: 1024px)',
-        desktop: '(min-width: 1025px)'
+        desktop: '(max-width: 1024px)',
+        tablet: '(max-width: 768px)',
+        mobile: '(max-width: 375px)'
     }
 };
 const darkTheme = {
@@ -331,14 +340,14 @@ const darkTheme = {
             border: '1px solid #8C9EFF',
             hover: {
                 color: '#8C9EFF',
-                fontWeight: '600',
+                fontWeight: '700',
                 background: 'transparent',
                 border: '1px solid #8C9EFF'
             }
         },
         secondary: {
             color: '#8C9EFF',
-            fontWeight: '600',
+            fontWeight: '700',
             background: 'transparent',
             border: '1px solid #8C9EFF',
             hover: {
@@ -355,14 +364,14 @@ const darkTheme = {
             border: '1px solid #808080',
             hover: {
                 color: '#f1f1f1',
-                fontWeight: '600',
+                fontWeight: '700',
                 background: 'transparent',
                 border: '1px solid #808080'
             }
         },
         monoOutline: {
             color: '#f1f1f1',
-            fontWeight: '600',
+            fontWeight: '700',
             background: 'transparent',
             border: '1px solid #f1f1f1',
             hover: {
@@ -374,12 +383,12 @@ const darkTheme = {
         },
         danger: {
             color: '#FFFFFF',
-            fontWeight: '600',
+            fontWeight: '700',
             background: '#EF5350',
             border: '1px solid #EF5350',
             hover: {
                 color: '#FFFFFF',
-                fontWeight: '600',
+                fontWeight: '700',
                 background: '#D32F2F',
                 border: '1px solid #D32F2F'
             }
@@ -973,10 +982,9 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 (()=>{
-    const e = new Error("Cannot find module '@/components/common/logos/logo'");
+    const e = new Error("Cannot find module '@/components/common/logos/LogoSVG'");
     e.code = 'MODULE_NOT_FOUND';
     throw e;
 })();
@@ -986,72 +994,81 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$co
 ;
 ;
 ;
-;
-const logo = '/icons/logo.svg';
-const logo_s = '/icons/logo_small.svg';
-const Logo = ()=>{
+const Logo = ({ logoType })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         href: "/",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledLogo, {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PCLogo, {
-                    height: "36px",
-                    width: "100px"
+                    className: logoType === 'footer-logo' ? 'footer-desktop-logo' : 'desktop-logo'
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Logo.tsx",
                     lineNumber: 15,
-                    columnNumber: 5
+                    columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                    src: logo_s,
-                    alt: "logo",
-                    width: 36,
-                    height: 36,
-                    className: "mobile-logo",
-                    priority: true
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MoLogo, {
+                    className: logoType === 'footer-logo' ? 'footer-mobile-logo' : 'mobile-logo'
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Logo.tsx",
-                    lineNumber: 17,
-                    columnNumber: 5
+                    lineNumber: 16,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/common/Logo.tsx",
             lineNumber: 14,
-            columnNumber: 4
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/common/Logo.tsx",
         lineNumber: 13,
-        columnNumber: 3
+        columnNumber: 5
     }, this);
 };
 const StyledLogo = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
     displayName: "Logo__StyledLogo",
     componentId: "sc-5f86beb6-0"
 })`
-	color: ${({ theme })=>theme.color.primary};
-	font-size: ${({ theme })=>theme.fontSize.large};
-	font-weight: ${({ theme })=>theme.fontWeight.bold};
-	cursor: pointer;
+    color: ${({ theme })=>theme.color.primary};
+    font-size: ${({ theme })=>theme.fontSize.large};
+    font-weight: ${({ theme })=>theme.fontWeight.bold};
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
 
-	img {
-		display: none;
-	}
+    .mobile-logo, .footer-mobile-logo {
+        display: none;
+    }
 
-	.desktop-logo {
-		display: block;
-	}
+    .desktop-logo {
+        height: 22px;
+    }
 
-	@media ${({ theme })=>theme.mediaQuery.mobile} {
-		.desktop-logo {
-			display: none;
-		}
+    .footer-desktop-logo {
+        color: ${({ theme })=>theme.color.subtext};
+        height: 32px;
+    }
+    
 
-		.mobile-logo {
-			display: block;
-		}
-	}
+
+    @media ${({ theme })=>theme.mediaQuery.tablet} {
+        .desktop-logo, .footer-desktop-logo {
+            display: none;
+        }
+
+        .mobile-logo {
+            display: block;
+            height: 36px;
+            width: 36px;
+        }
+
+        .footer-mobile-logo {
+            display: block;
+            color: ${({ theme })=>theme.color.subtext};
+            height: 48px;
+        }
+    }
+
 `;
 const __TURBOPACK__default__export__ = Logo;
 }}),
@@ -1280,7 +1297,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 ;
@@ -1293,9 +1310,9 @@ const Dropdown = ({ children, toggleButton, isOpen = false, className })=>{
                 setOpen(false);
             }
         }
-        document.addEventListener("mousedown", handleOutsideClick);
+        document.addEventListener('mousedown', handleOutsideClick);
         return ()=>{
-            document.removeEventListener("mousedown", handleOutsideClick);
+            document.removeEventListener('mousedown', handleOutsideClick);
         };
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledDropdown, {
@@ -1306,7 +1323,7 @@ const Dropdown = ({ children, toggleButton, isOpen = false, className })=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 onClick: ()=>setOpen(!open),
                 children: toggleButton && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].isValidElement(toggleButton) && (toggleButton.type !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].Fragment ? /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].cloneElement(toggleButton, {
-                    className: open ? "open" : ""
+                    className: open ? 'open' : ''
                 }) : toggleButton)
             }, void 0, false, {
                 fileName: "[project]/src/components/common/Dropdown.tsx",
@@ -1333,121 +1350,123 @@ const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
     displayName: "Dropdown__StyledDropdown",
     componentId: "sc-6c6eed3-0"
 })`
-  position: relative;
-  cursor: pointer;
-
-  button {
+    position: relative;
     cursor: pointer;
 
-    svg {
-      font-size: ${({ theme })=>theme.fontSize.large};
-    }
-  }
-
-  &.auth {
-    .panel {
-      position: absolute;
-      top: 2.3rem;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      width: auto;
-      height: auto;
-      max-height: ${({ $open })=>$open ? "300px" : "0"};
-      padding: ${({ $open })=>$open ? "1rem" : "0"};
-      gap: 0.5rem;
-      font-size: ${({ theme })=>theme.fontSize.small};
-
-      background: ${({ theme })=>theme.color.surface};
-      box-shadow: ${({ theme })=>theme.shadow.medium};
-      border: 1px solid ${({ theme })=>theme.color.border};
-      border-radius: ${({ theme })=>theme.borderRadius.soft};
-      z-index: 1000;
-      white-space: nowrap;
-
-      transform-origin: top right;
-      opacity: ${({ $open })=>$open ? "1" : "0"};
-      transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
-      overflow: hidden;
-
-      .item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0.3rem 1rem;
+    button {
         cursor: pointer;
 
-        color: ${({ theme })=>theme.color.text};
-        font-size: ${({ theme })=>theme.fontSize.small};
-
-        a {
-          padding: 0;
-          margin: 0;
+        svg {
+            font-size: ${({ theme })=>theme.fontSize.large};
         }
-          
-          button {
-              background: rebeccapurple;
-          }
-
-        &:hover {
-          color: ${({ theme })=>theme.color.primary};
-        }
-      }
-    }
-  }
-
-  &.drawer {
-    .panel {
-      transform-origin: top;
-      transform: ${({ $open })=>$open ? "scaleY(1)" : "scaleY(0)"};
-      opacity: ${({ $open })=>$open ? "1" : "0"};
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      overflow: hidden;
-
-      width: 100vw;
-      position: absolute;
-      top: 2.11rem;
-      left: 0;
-      margin-left: -1rem;
-      background: ${({ theme })=>theme.color.surface};
-      border: 1px solid ${({ theme })=>theme.color.border};
-      box-shadow: ${({ theme })=>theme.shadow.medium};
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 1rem;
-      gap: 0.5rem;
-
-      .item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0.3rem 0;
-        cursor: pointer;
-
-        color: ${({ theme })=>theme.color.text};
-        font-size: ${({ theme })=>theme.fontSize.small};
-
-        a {
-          padding: 0;
-          margin: 0;
-        }
-
-        &:hover {
-          color: ${({ theme })=>theme.color.primary};
-        }
-      }
     }
 
-    @media (min-width: 768px) {
-      display: none;
+    &.auth {
+        .panel {
+            position: absolute;
+            top: 2.5rem;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: auto;
+            height: auto;
+            max-height: ${({ $open })=>$open ? '300px' : '0'};
+            padding: ${({ $open })=>$open ? '1rem' : '0'};
+            gap: 0.5rem;
+            font-size: ${({ theme })=>theme.fontSize.small};
+
+            background: ${({ theme })=>theme.color.surface};
+            box-shadow: ${({ theme })=>theme.shadow.medium};
+            border: 1px solid ${({ theme })=>theme.color.border};
+            border-radius: ${({ theme })=>theme.borderRadius.soft};
+            z-index: 1000;
+            white-space: nowrap;
+
+            transform-origin: top right;
+            opacity: ${({ $open })=>$open ? '1' : '0'};
+            transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.3s ease;
+            overflow: hidden;
+
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0.3rem 1rem;
+                cursor: pointer;
+
+                color: ${({ theme })=>theme.color.text};
+                font-size: ${({ theme })=>theme.fontSize.small};
+
+                a {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                button {
+                    background: rebeccapurple;
+                }
+
+                &:hover {
+                    color: ${({ theme })=>theme.color.primary};
+                }
+            }
+        }
     }
-  }
+
+    &.drawer {
+        display: none;
+
+        .panel {
+            transform-origin: top;
+            transform: ${({ $open })=>$open ? 'scaleY(1)' : 'scaleY(0)'};
+            opacity: ${({ $open })=>$open ? '1' : '0'};
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            overflow: hidden;
+
+            width: 100vw;
+            position: absolute;
+            top: 2.5rem;
+            left: 0;
+            margin-left: -1rem;
+            background: ${({ theme })=>theme.color.surface};
+            border: 1px solid ${({ theme })=>theme.color.border};
+            box-shadow: ${({ theme })=>theme.shadow.medium};
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            gap: 0.5rem;
+
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0.3rem 0;
+                cursor: pointer;
+
+                color: ${({ theme })=>theme.color.text};
+                font-size: ${({ theme })=>theme.fontSize.small};
+
+                a {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                &:hover {
+                    color: ${({ theme })=>theme.color.primary};
+                }
+            }
+        }
+
+        @media ${({ theme })=>theme.mediaQuery.tablet} {
+            display: block;
+        }
+    }
 `;
 const __TURBOPACK__default__export__ = Dropdown;
 }}),
@@ -1500,7 +1519,9 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$navigation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/constants/navigation.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
+;
 ;
 ;
 ;
@@ -1509,72 +1530,81 @@ const Navigation = ()=>{
         id: "navigation",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
             children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$navigation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NAVIGATION"].map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                    children: item.title
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: '/',
+                        children: [
+                            "  ",
+                            item.title
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/header/Navigation.tsx",
+                        lineNumber: 11,
+                        columnNumber: 13
+                    }, this)
                 }, index, false, {
                     fileName: "[project]/src/components/header/Navigation.tsx",
-                    lineNumber: 9,
-                    columnNumber: 6
+                    lineNumber: 10,
+                    columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/header/Navigation.tsx",
-            lineNumber: 7,
-            columnNumber: 4
+            lineNumber: 8,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/header/Navigation.tsx",
-        lineNumber: 6,
-        columnNumber: 3
+        lineNumber: 7,
+        columnNumber: 5
     }, this);
 };
 const StyledNavigation = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styled"].nav.withConfig({
     displayName: "Navigation__StyledNavigation",
     componentId: "sc-fec254c6-0"
 })`
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-	white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
 
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 
-	ul {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: flex-start;
-		list-style: none;
-		padding: 0;
-		margin: 0 1rem 0 1rem;
-		gap: 1.2rem;
-		line-height: 1;
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0 1rem 0 1rem;
+        gap: 1.4rem;
+        line-height: 1;
 
-		li {
-			padding: 0;
-			margin: 0;
-			cursor: pointer;
+        li {
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
 
-			font-size: ${({ theme })=>theme.fontSize.small};
+            font-size: ${({ theme })=>theme.fontSize.small};
 
-			&:hover {
-				color: ${({ theme })=>theme.color.primary};
-				font-weight: ${({ theme })=>theme.fontWeight.semiBold};
-			}
+            a {
+                font-size: ${({ theme })=>theme.fontSize.small};
+                font-weight: ${({ theme })=>theme.fontWeight.medium};
+                color: ${({ theme })=>theme.color.text};
+                text-decoration: none;
+                transition: color 0.3s ease;
 
-			a {
-				font-size: ${({ theme })=>theme.fontSize.medium};
-				font-weight: ${({ theme })=>theme.fontWeight.medium};
-				color: ${({ theme })=>theme.color.text};
-				text-decoration: none;
-				transition: color 0.3s ease;
-			}
-		}
-	}
+                &:hover {
+                    color: ${({ theme })=>theme.color.primary};
+                    font-weight: ${({ theme })=>theme.fontWeight.medium};
+                }
+            }
+        }
+    }
 
-	@media ${({ theme })=>theme.mediaQuery.mobile} {
-		display: none;
-	}
+    @media ${({ theme })=>theme.mediaQuery.tablet} {
+        display: none;
+    }
 `;
 const __TURBOPACK__default__export__ = Navigation;
 }}),
@@ -1674,30 +1704,30 @@ const Drawer = ()=>{
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                     fileName: "[project]/src/components/header/Drawer.tsx",
                     lineNumber: 14,
-                    columnNumber: 6
+                    columnNumber: 11
                 }, void 0),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                     fileName: "[project]/src/components/header/Drawer.tsx",
                     lineNumber: 15,
-                    columnNumber: 6
+                    columnNumber: 11
                 }, void 0),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                     fileName: "[project]/src/components/header/Drawer.tsx",
                     lineNumber: 16,
-                    columnNumber: 6
+                    columnNumber: 11
                 }, void 0)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/header/Drawer.tsx",
             lineNumber: 13,
-            columnNumber: 5
+            columnNumber: 9
         }, void 0),
         className: "drawer",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$ThemeSwitcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/components/header/Drawer.tsx",
                 lineNumber: 21,
-                columnNumber: 4
+                columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$navigation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NAVIGATION"].map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     href: item.link,
@@ -1706,74 +1736,74 @@ const Drawer = ()=>{
                 }, index, false, {
                     fileName: "[project]/src/components/header/Drawer.tsx",
                     lineNumber: 23,
-                    columnNumber: 5
+                    columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/header/Drawer.tsx",
         lineNumber: 11,
-        columnNumber: 3
+        columnNumber: 5
     }, this);
 };
 const StyledDrawerButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
     displayName: "Drawer__StyledDrawerButton",
     componentId: "sc-ed7adeeb-0"
 })`
-	position: relative;
-	width: 1.2rem;
-	aspect-ratio: 1.1 / 1;
-	cursor: pointer;
+    position: relative;
+    width: 1.2rem;
+    aspect-ratio: 1.1 / 1;
+    cursor: pointer;
 
-	span {
-		position: absolute;
-		width: 100%;
-		height: 0.15rem;
-		background: ${({ theme })=>theme.color.text};
-		left: 0;
-		border-radius: 0.2rem;
-		transition: all 0.3s ease;
-	}
+    span {
+        position: absolute;
+        width: 100%;
+        height: 0.125rem;
+        background: ${({ theme })=>theme.color.text};
+        left: 0;
+        border-radius: 0.2rem;
+        transition: all 0.3s ease;
+    }
 
-	/* 기본 상태 */
-	span:nth-of-type(1) {
-		top: 0;
-		transform: translateY(0) rotate(0);
-	}
+    /* 기본 상태 */
+    span:nth-of-type(1) {
+        top: 0;
+        transform: translateY(0) rotate(0);
+    }
 
-	span:nth-of-type(2) {
-		top: 50%;
-		opacity: 1;
-		transform: translateY(-50%);
-	}
+    span:nth-of-type(2) {
+        top: 50%;
+        opacity: 1;
+        transform: translateY(-50%);
+    }
 
-	span:nth-of-type(3) {
-		top: 100%;
-		transform: translateY(-100%) rotate(0);
-	}
+    span:nth-of-type(3) {
+        top: 100%;
+        transform: translateY(-100%) rotate(0);
+    }
 
-	/* .open 클래스가 추가된 상태 */
-	&.open {
-		span:nth-of-type(1) {
-			top: 50%;
-			transform: translateY(-50%) rotate(45deg);
-		}
+    /* .open 클래스가 추가된 상태 */
+    &.open {
+        span:nth-of-type(1) {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
 
-		span:nth-of-type(2) {
-			opacity: 0;
-		}
+        span:nth-of-type(2) {
+            opacity: 0;
+        }
 
-		span:nth-of-type(3) {
-			top: 50%;
-			transform: translateY(-50%) rotate(-45deg);
-		}
-	}
+        span:nth-of-type(3) {
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
 
-	@media (max-width: 768px) {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100%;
-	}
+    @media ${({ theme })=>theme.mediaQuery.tablet} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
 `;
 const __TURBOPACK__default__export__ = Drawer;
 }}),
@@ -1796,8 +1826,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/Navigation.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Drawer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/Drawer.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$ThemeSwitcher$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/header/ThemeSwitcher.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -1861,11 +1893,20 @@ const Header = ()=>{
                                 toggleButton: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         scheme: "secondary",
-                                        children: "내 정보"
-                                    }, void 0, false, {
+                                        children: [
+                                            "내 정보",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaUserCircle"], {
+                                                className: "userCircle"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/common/Header.tsx",
+                                                lineNumber: 43,
+                                                columnNumber: 23
+                                            }, void 0)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/common/Header.tsx",
                                         lineNumber: 41,
-                                        columnNumber: 19
+                                        columnNumber: 21
                                     }, void 0)
                                 }, void 0, false),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1875,10 +1916,10 @@ const Header = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
                                             lineNumber: 49,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/myPage",
+                                            href: "/mypage",
                                             className: "item",
                                             children: "마이페이지"
                                         }, void 0, false, {
@@ -1893,14 +1934,14 @@ const Header = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/Header.tsx",
                                             lineNumber: 51,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
                                 lineNumber: 37,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 scheme: "secondary",
                                 onClick: toggleLogin,
@@ -1910,8 +1951,8 @@ const Header = ()=>{
                                 children: "로그인"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
-                                lineNumber: 57,
-                                columnNumber: 13
+                                lineNumber: 59,
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 scheme: "primary",
@@ -1922,7 +1963,7 @@ const Header = ()=>{
                                 children: "구독하기"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/Header.tsx",
-                                lineNumber: 61,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1944,12 +1985,12 @@ const Header = ()=>{
                     children: "구독하기 모달 내용"
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/Header.tsx",
-                    lineNumber: 68,
+                    lineNumber: 70,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/common/Header.tsx",
-                lineNumber: 67,
+                lineNumber: 69,
                 columnNumber: 9
             }, this)
         ]
@@ -1981,10 +2022,11 @@ const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 4rem;
 
         margin: 0 auto;
         padding: 0.5rem 1rem;
-        gap: 1rem;
+        gap: 1.4rem;
 
         width: 100%;
         max-width: ${({ theme })=>theme.layout.width.large};
@@ -2007,13 +2049,14 @@ const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
             border-radius: ${({ theme })=>theme.borderRadius.circle};
             object-fit: cover;
         }
-	    button {
-		    font-size: ${({ theme })=>theme.fontSize.small};
-	    }
+
+        button {
+            font-size: ${({ theme })=>theme.fontSize.extraSmall};
+        }
     }
 
     .mobile-hidden {
-        @media ${({ theme })=>theme.mediaQuery.mobile} {
+        @media ${({ theme })=>theme.mediaQuery.tablet} {
             display: none;
         }
     }
@@ -2021,7 +2064,7 @@ const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
     .desktop-hidden {
         display: none;
 
-        @media ${({ theme })=>theme.mediaQuery.mobile} {
+        @media ${({ theme })=>theme.mediaQuery.tablet} {
             display: block;
         }
     }
@@ -2050,7 +2093,9 @@ const Footer = ()=>{
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "footer",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Logo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Logo$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                    logoType: "footer-logo"
+                }, void 0, false, {
                     fileName: "[project]/src/components/common/Footer.tsx",
                     lineNumber: 11,
                     columnNumber: 5
@@ -2121,7 +2166,7 @@ const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 
 	width: 100%;
 	margin-top: auto;
-	padding: 4rem 0 3rem 0;
+	padding: 3rem 0;
 	background: ${({ theme })=>theme.color.surface};
 	border-top: 1px solid ${({ theme })=>theme.color.border};
 
@@ -2135,6 +2180,11 @@ const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 		width: 100%;
 		max-width: ${({ theme })=>theme.layout.width.large};
 		padding: 0 1rem;
+
+		p {
+			font-size: ${({ theme })=>theme.fontSize.extraSmall};
+			color: ${({ theme })=>theme.color.lightGrey};
+		}
 	}
 
 	.footer-menu {
@@ -2143,8 +2193,8 @@ const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 		gap: 1rem;
 
 		a {
-			font-size: ${({ theme })=>theme.fontSize.small};
-			color: ${({ theme })=>theme.color.text};
+			font-size: ${({ theme })=>theme.fontSize.extraSmall};
+			color: ${({ theme })=>theme.color.subtext};
 			cursor: pointer;
 
 			&:hover {
@@ -2152,6 +2202,7 @@ const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 				color: ${({ theme })=>theme.color.primary};
 			}
 		}
+
 	}
 `;
 const __TURBOPACK__default__export__ = Footer;

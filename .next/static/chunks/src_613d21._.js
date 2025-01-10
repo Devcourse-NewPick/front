@@ -28,8 +28,13 @@ const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
     padding: 0;
     color: ${({ theme })=>theme.color.text};
     background: ${({ theme })=>theme.color.background};
-	  overflow-x: hidden;
-	  overflow-y: hidden;
+
+	  /* 스크롤바 숨김 처리 (브라우저별 설정) */
+	  scrollbar-width: none; /* Firefox */
+	  &::-webkit-scrollbar {
+		  display: none; /* Webkit 기반 브라우저 (Chrome, Safari, Edge) */
+	  }
+	  -ms-overflow-style: none; /* IE, Edge */
 
   }
 
@@ -200,14 +205,14 @@ const lightTheme = {
     },
     buttonScheme: {
         primary: {
-            color: '#FFFFFF',
+            color: '#ffffff',
             fontWeight: '700',
             background: '#3610e1',
             border: '1px solid #3610e1',
             hover: {
-                color: '#3610e1',
+                color: '#f4f1ff',
                 fontWeight: '700',
-                background: 'transparent',
+                background: '#2001af',
                 border: '1px solid #3610e1'
             }
         },
@@ -217,9 +222,9 @@ const lightTheme = {
             background: 'transparent',
             border: '1px solid #3610e1',
             hover: {
-                color: '#ffffff',
+                color: '#2705C0',
                 fontWeight: '700',
-                background: '#2705C0',
+                background: '#f4f1ff',
                 border: '1px solid #3610e1'
             }
         },
@@ -229,10 +234,10 @@ const lightTheme = {
             background: '#222222',
             border: '1px solid #222222',
             hover: {
-                color: '#444444',
+                color: '#f1f1f1',
                 fontWeight: '700',
-                background: 'transparent',
-                border: '1px solid #999999'
+                background: '#111111',
+                border: '1px solid #111111'
             }
         },
         monoOutline: {
@@ -241,10 +246,10 @@ const lightTheme = {
             background: 'transparent',
             border: '1px solid #999999',
             hover: {
-                color: '#ffffff',
+                color: '#444444',
                 fontWeight: '700',
-                background: '#222222',
-                border: '1px solid #222222'
+                background: '#f1f1f1',
+                border: '1px solid #444444'
             }
         },
         danger: {
@@ -314,10 +319,10 @@ const darkTheme = {
             background: '#8C9EFF',
             border: '1px solid #8C9EFF',
             hover: {
-                color: '#8C9EFF',
+                color: '#000000',
                 fontWeight: '700',
-                background: 'transparent',
-                border: '1px solid #8C9EFF'
+                background: '#6c80ed',
+                border: '1px solid #6c80ed'
             }
         },
         secondary: {
@@ -326,9 +331,9 @@ const darkTheme = {
             background: 'transparent',
             border: '1px solid #8C9EFF',
             hover: {
-                color: '#121212',
+                color: '#8C9EFF',
                 fontWeight: '700',
-                background: '#8C9EFF',
+                background: '#0f1d7a',
                 border: '1px solid #8C9EFF'
             }
         },
@@ -338,22 +343,22 @@ const darkTheme = {
             background: '#f1f1f1',
             border: '1px solid #808080',
             hover: {
-                color: '#f1f1f1',
+                color: '#121212',
                 fontWeight: '700',
-                background: 'transparent',
-                border: '1px solid #808080'
+                background: '#d9d9d9',
+                border: '1px solid #d9d9d9'
             }
         },
         monoOutline: {
             color: '#f1f1f1',
             fontWeight: '700',
             background: 'transparent',
-            border: '1px solid #f1f1f1',
+            border: '1px solid #808080',
             hover: {
-                color: '#121212',
+                color: '#f1f1f1',
                 fontWeight: '700',
-                background: '#f1f1f1',
-                border: '1px solid #808080'
+                background: '#191919',
+                border: '1px solid #999999'
             }
         },
         danger: {
@@ -1475,6 +1480,9 @@ const StyledModal = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
 		min-height: 20rem;
 		display: flex;
 		flex-direction: column;
+		
+		align-items: center;
+		justify-content: center;
 	}
 
 	.modal-contents {

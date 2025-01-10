@@ -25,52 +25,62 @@ __turbopack_esm__({
     "GlobalStyle": (()=>GlobalStyle)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
-'use client';
+"use client";
 ;
 ;
-const Pretendard = '/fonts/Pretendard.woff2';
+const Pretendard = "/fonts/Pretendard.woff2";
 const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createGlobalStyle"]`
-  @font-face {
-    font-family: 'Pretendard';
-    src: local('Pretendard'), url(${Pretendard}) format('woff2');
-  }
+    @font-face {
+        font-family: 'Pretendard';
+        src: local('Pretendard'), url(${Pretendard}) format('woff2');
+    }
 
-  * {
-    font-family: 'Pretendard', sans-serif;
-  }
+    * {
+        font-family: 'Pretendard', sans-serif;
+    }
 
-  html,body {
-    margin: 0;
-    padding: 0;
-    color: ${({ theme })=>theme.color.text};
-    background: ${({ theme })=>theme.color.background};
+    html, body {
+        margin: 0;
+        padding: 0;
+        color: ${({ theme })=>theme.color.text};
+        background: ${({ theme })=>theme.color.background};
 
-	  /* 스크롤바 숨김 처리 (브라우저별 설정) */
-	  scrollbar-width: none; /* Firefox */
-	  &::-webkit-scrollbar {
-		  display: none; /* Webkit 기반 브라우저 (Chrome, Safari, Edge) */
-	  }
-	  -ms-overflow-style: none; /* IE, Edge */
+        /* 스크롤바 숨김 처리 (브라우저별 설정) */
+        scrollbar-width: none; /* Firefox */
 
-  }
+        &::-webkit-scrollbar {
+            display: none; /* Webkit 기반 브라우저 (Chrome, Safari, Edge) */
+        }
+        -ms-overflow-style: none; /* IE, Edge */
+    }
 
-  a {
-    text-decoration: none;
-  }
+    a {
+        text-decoration: none;
+    }
 
-  input {
-	  outline: none;
-  }
-  
-  ul, li {
-	  list-style: none;
-	  margin: 0;
-	  padding: 0;
-  }
-  
-  h1, h2, h3, h4, h5, h6, p {
-	  margin: 0;
-  }
+    input {
+        outline: none;
+    }
+
+    ul, li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        margin: 0;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
 `;
 }}),
 "[externals]/next/dist/server/app-render/action-async-storage.external.js [external] (next/dist/server/app-render/action-async-storage.external.js, cjs)": (function(__turbopack_context__) {
@@ -317,7 +327,7 @@ const lightTheme = {
     mediaQuery: {
         desktop: '(max-width: 1024px)',
         tablet: '(max-width: 768px)',
-        mobile: '(max-width: 375px)'
+        mobile: '(max-width: 425px)'
     }
 };
 const darkTheme = {

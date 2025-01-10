@@ -28,6 +28,7 @@ const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
         padding: 0;
         color: ${({ theme })=>theme.color.text};
         background: ${({ theme })=>theme.color.background};
+        scroll-behavior: smooth;
 
         /* 스크롤바 숨김 처리 (브라우저별 설정) */
         scrollbar-width: none; /* Firefox */
@@ -40,6 +41,7 @@ const GlobalStyle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
 
     a {
         text-decoration: none;
+        color: ${({ theme })=>theme.color.text};
     }
 
     input {

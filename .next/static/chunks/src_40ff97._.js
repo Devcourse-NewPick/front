@@ -589,11 +589,8 @@ function TapBtn({ activeTab, setActiveTab }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: ()=>setActiveTab('subscribe'),
                 className: activeTab === 'subscribe' ? 'active' : '',
-                children: [
-                    "구독한 뉴스레터",
-                    subsnewsletter.length
-                ]
-            }, void 0, true, {
+                children: "구독한 뉴스레터"
+            }, void 0, false, {
                 fileName: "[project]/src/components/mypage/TapBtn.tsx",
                 lineNumber: 11,
                 columnNumber: 7
@@ -604,7 +601,7 @@ function TapBtn({ activeTab, setActiveTab }) {
                 children: "북마크한 뉴스레터"
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/TapBtn.tsx",
-                lineNumber: 18,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -613,7 +610,7 @@ function TapBtn({ activeTab, setActiveTab }) {
                 children: "뉴스레터 설정"
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/TapBtn.tsx",
-                lineNumber: 24,
+                lineNumber: 23,
                 columnNumber: 7
             }, this)
         ]

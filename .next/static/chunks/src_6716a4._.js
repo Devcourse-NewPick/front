@@ -375,7 +375,7 @@ const SUMMARYNEWS = [
         "likes": 1,
         "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
-        "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
+        "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage?"
     },
     {
         "id": 3,
@@ -393,12 +393,21 @@ const SUMMARYNEWS = [
         "createdAt": '2025-01-01',
         "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
-        "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
+        "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
     },
     {
         "id": 5,
         "categoryName": '세계',
         "likes": 0,
+        "createdAt": '2025-01-01',
+        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
+        "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
+    },
+    {
+        "id": 6,
+        "categoryName": '미국',
+        "likes": 1,
         "createdAt": '2025-01-01',
         "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
@@ -588,7 +597,7 @@ function TabBtn({ activeTab, setActiveTab }) {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: [
                         "구독한 뉴스레터 (",
-                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUBSCRIBE"].length,
+                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length,
                         ")"
                     ]
                 }, void 0, true, {
@@ -749,6 +758,7 @@ function SubscribeInfo({ activeCategory }) {
     const navRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [isSticky, setIsSticky] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const { handleAnchorNavigation } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
+    // 스크롤 좌우 넓어지는 효과
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SubscribeInfo.useEffect": ()=>{
             const handleScroll = {
@@ -779,25 +789,25 @@ function SubscribeInfo({ activeCategory }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoIosArrowBack"], {}, void 0, false, {
                             fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                            lineNumber: 40,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "2025.01.01"
                         }, void 0, false, {
                             fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                            lineNumber: 41,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoIosArrowForward"], {}, void 0, false, {
                             fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -809,28 +819,28 @@ function SubscribeInfo({ activeCategory }) {
                                 children: news.categoryName
                             }, void 0, false, {
                                 fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                                lineNumber: 47,
+                                lineNumber: 48,
                                 columnNumber: 15
                             }, this)
                         }, index, false, {
                             fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                            lineNumber: 46,
+                            lineNumber: 47,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/mypage/tabpage/SubscribeInfo.tsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 5
     }, this);
 }
@@ -898,12 +908,13 @@ const ContentsStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
         justify-content: center;
         gap: 0.2rem 1.25rem;
         color: ${({ theme })=>theme.color.subtext};
-
+        
         .category {
-            &.active button {
+            &.active button{
                 color: ${({ theme })=>theme.color.primary};
                 font-weight: ${({ theme })=>theme.fontWeight.medium};
             }
+            
             button {
                 color: ${({ theme })=>theme.color.subtext};
                 cursor: pointer;
@@ -976,13 +987,13 @@ function MySummaryCategory() {
                                         news.categoryName,
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoIosArrowForward"], {}, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                            lineNumber: 27,
+                                            lineNumber: 25,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 23,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -992,18 +1003,18 @@ function MySummaryCategory() {
                                         children: news.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                        lineNumber: 30,
+                                        lineNumber: 28,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 27,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                            lineNumber: 24,
+                            lineNumber: 22,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1014,7 +1025,7 @@ function MySummaryCategory() {
                                     children: news.summary
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 33,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1024,7 +1035,7 @@ function MySummaryCategory() {
                                             alt: "news-img"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 35,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1035,6 +1046,18 @@ function MySummaryCategory() {
                                                     onClick: handleLike,
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoMdHeart"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 64
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
+                                                    lineNumber: 38,
+                                                    columnNumber: 21
+                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "icon",
+                                                    onClick: handleLike,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoMdHeartEmpty"], {}, void 0, false, {
+                                                        fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
                                                         lineNumber: 40,
                                                         columnNumber: 64
                                                     }, this)
@@ -1042,30 +1065,18 @@ function MySummaryCategory() {
                                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
                                                     lineNumber: 40,
                                                     columnNumber: 21
-                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "icon",
-                                                    onClick: handleLike,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoMdHeartEmpty"], {}, void 0, false, {
-                                                        fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                        lineNumber: 42,
-                                                        columnNumber: 64
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                    lineNumber: 42,
-                                                    columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "icon",
                                                     onClick: ()=>{},
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$lu$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LuLink2"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                        lineNumber: 44,
+                                                        lineNumber: 42,
                                                         columnNumber: 60
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                    lineNumber: 44,
+                                                    lineNumber: 42,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1073,41 +1084,41 @@ function MySummaryCategory() {
                                                     onClick: ()=>{},
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$lu$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LuExternalLink"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                        lineNumber: 45,
+                                                        lineNumber: 43,
                                                         columnNumber: 60
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                    lineNumber: 45,
+                                                    lineNumber: 43,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                            lineNumber: 38,
+                                            lineNumber: 36,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 34,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                            lineNumber: 34,
+                            lineNumber: 32,
                             columnNumber: 13
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                    lineNumber: 22,
+                    lineNumber: 20,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-            lineNumber: 20,
+            lineNumber: 18,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -1118,7 +1129,7 @@ const MySummaryCategoryStyled = __TURBOPACK__imported__module__$5b$project$5d2f$
     displayName: "MySummaryCategory__MySummaryCategoryStyled",
     componentId: "sc-8395d5d2-0"
 })`
-    height: 100%;
+
 
     @keyframes moveForward {
         0% {
@@ -1130,10 +1141,12 @@ const MySummaryCategoryStyled = __TURBOPACK__imported__module__$5b$project$5d2f$
     }
 
     .content {
+        height: 100%;
         margin-top: 3.75rem;
-        scroll-margin-top: 7.875rem;
+        scroll-margin-top: 7.4rem;
 
         .top {
+            margin-top: 3.75rem;
             margin-bottom: 1.875rem;
 
             .category-name {
@@ -1160,20 +1173,20 @@ const MySummaryCategoryStyled = __TURBOPACK__imported__module__$5b$project$5d2f$
                 }
             }
         }
-
-
+        
         .bottom {
+            height: 100%;
             display: flex;
             flex-direction: row;
             gap: 1.25rem;
 
             .text {
+                height: 100%;
                 background-color: ${({ theme })=>theme.color.surface};
                 border: 1px solid ${({ theme })=>theme.color.border};
                 border-radius: ${({ theme })=>theme.borderRadius.medium};
                 padding: 1.25rem;
                 color: ${({ theme })=>theme.color.subtext};
-
             }
 
             img {
@@ -1247,57 +1260,45 @@ var _s = __turbopack_refresh__.signature();
 ;
 function MySubscribe() {
     _s();
-    const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])({
         "MySubscribe.useLayoutEffect": ()=>{
-            const categories = document.querySelectorAll('.content');
-            const options = {
-                root: null,
-                rootMargin: '110px 0px 0px 0px',
-                threshold: 0.74
-            };
-            const observerCallback = {
-                "MySubscribe.useLayoutEffect.observerCallback": (entries)=>{
-                    entries.forEach({
-                        "MySubscribe.useLayoutEffect.observerCallback": (entry)=>{
-                            if (entry.isIntersecting) {
-                                setActiveCategory(entry.target.id);
-                            }
-                        }
-                    }["MySubscribe.useLayoutEffect.observerCallback"]);
+            const categories = document.querySelectorAll(".content");
+            let sectionPositions = [];
+            const calcPositions = {
+                "MySubscribe.useLayoutEffect.calcPositions": ()=>{
+                    sectionPositions = Array.from(categories).map({
+                        "MySubscribe.useLayoutEffect.calcPositions": (cat)=>cat.offsetTop
+                    }["MySubscribe.useLayoutEffect.calcPositions"]);
                 }
-            }["MySubscribe.useLayoutEffect.observerCallback"];
-            const observer = new IntersectionObserver(observerCallback, options);
-            categories.forEach({
-                "MySubscribe.useLayoutEffect": (category)=>{
-                    observer.observe(category);
+            }["MySubscribe.useLayoutEffect.calcPositions"];
+            const handleScroll = {
+                "MySubscribe.useLayoutEffect.handleScroll": ()=>{
+                    const currentScroll = window.scrollY; // 높이 더하기 빼기 조절
+                    let activeIndex = 0;
+                    for(let i = 0; i < sectionPositions.length; i++){
+                        if (sectionPositions[i] <= currentScroll) {
+                            activeIndex = i;
+                        }
+                    }
+                    setActiveCategory(categories[activeIndex]?.id || "");
+                }
+            }["MySubscribe.useLayoutEffect.handleScroll"];
+            // 처음 셋팅
+            calcPositions();
+            handleScroll();
+            // 스크롤, 리사이즈 이벤트 등록
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", {
+                "MySubscribe.useLayoutEffect": ()=>{
+                    calcPositions();
+                    handleScroll();
                 }
             }["MySubscribe.useLayoutEffect"]);
-            //
-            //
-            // if (categories[0]) {
-            //   setActiveCategory(categories[0].id);
-            // }
-            // 윈도우 리사이즈 시 옵저버 재설정
-            const handleResize = {
-                "MySubscribe.useLayoutEffect.handleResize": ()=>{
-                    observer.disconnect();
-                    categories.forEach({
-                        "MySubscribe.useLayoutEffect.handleResize": (category)=>{
-                            observer.observe(category);
-                        }
-                    }["MySubscribe.useLayoutEffect.handleResize"]);
-                }
-            }["MySubscribe.useLayoutEffect.handleResize"];
-            window.addEventListener('resize', handleResize);
             return ({
                 "MySubscribe.useLayoutEffect": ()=>{
-                    categories.forEach({
-                        "MySubscribe.useLayoutEffect": (category)=>{
-                            observer.unobserve(category);
-                        }
-                    }["MySubscribe.useLayoutEffect"]);
-                    window.removeEventListener('resize', handleResize);
+                    window.removeEventListener("scroll", handleScroll);
+                    window.removeEventListener("resize", calcPositions);
                 }
             })["MySubscribe.useLayoutEffect"];
         }
@@ -1308,24 +1309,24 @@ function MySubscribe() {
                 activeCategory: activeCategory
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/tabpage/MySubscribe.tsx",
-                lineNumber: 60,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MySubscribeStyled, {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$tabpage$2f$MySummaryCategory$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/components/mypage/tabpage/MySubscribe.tsx",
-                    lineNumber: 62,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/tabpage/MySubscribe.tsx",
-                lineNumber: 61,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(MySubscribe, "VkGkMLlx2iA/SjHsi/IGQ/U11rs=");
+_s(MySubscribe, "dVjPqhlUgTj+1ZUUHzE/pXCn0dw=");
 _c = MySubscribe;
 const MySubscribeStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
     displayName: "MySubscribe__MySubscribeStyled",
@@ -1334,7 +1335,7 @@ const MySubscribeStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_m
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
-    
+
 `;
 _c1 = MySubscribeStyled;
 const __TURBOPACK__default__export__ = MySubscribe;

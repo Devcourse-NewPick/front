@@ -665,6 +665,7 @@ const TabBtnStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
     justify-content: flex-start;
 
     button {
+        cursor: pointer;
         padding: 0.5rem 0;
         width: 12rem;
         background-color: transparent;
@@ -951,14 +952,14 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 ;
-const IconStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
+const IconStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].button.withConfig({
     displayName: "Icons__IconStyled",
     componentId: "sc-42c5c0b9-0"
 })`
-    background-color: ${({ theme })=>theme.color.colorBackground};
+    background-color: transparent;
     border-radius: ${({ theme })=>theme.borderRadius.circle};
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -968,11 +969,11 @@ const IconStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
         width: 1.5rem;
         height: 1.5rem;
         color: ${({ theme })=>theme.color.primary};
-
-        &:hover {
-            color: ${({ theme })=>theme.color.secondary};
-            transition: all .3s ease;
-        }
+    }
+    
+    &:hover {
+        background-color: ${({ theme })=>theme.color.colorBackground};
+        transition: all .3s ease;
     }
 `;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -1002,35 +1003,31 @@ function LikeIcon() {
     const handleLike = ()=>{
         setLike(!like);
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Icons$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IconStyled"], {
-        children: like ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: like ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Icons$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IconStyled"], {
             onClick: handleLike,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoMdHeart"], {}, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
                 lineNumber: 20,
-                columnNumber: 35
+                columnNumber: 42
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
             lineNumber: 20,
             columnNumber: 9
-        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Icons$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IconStyled"], {
             onClick: handleLike,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoMdHeartEmpty"], {}, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
                 lineNumber: 22,
-                columnNumber: 35
+                columnNumber: 42
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
             lineNumber: 22,
             columnNumber: 9
         }, this)
-    }, void 0, false, {
-        fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
-        lineNumber: 18,
-        columnNumber: 5
-    }, this);
+    }, void 0, false);
 }
 _s(LikeIcon, "VkN6Zs6j+ym57yOWhL0knaWHQuY=");
 _c = LikeIcon;
@@ -1157,7 +1154,7 @@ const ThumbImgStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modu
     width: ${(props)=>props.width};
     height: ${(props)=>props.height || "auto"};
     border-radius: ${({ theme })=>theme.borderRadius.medium};
-    margin-bottom: 0.125rem;
+    margin-bottom: 1.25rem;
     display: block;
     max-width: 100%;
 `;
@@ -1213,13 +1210,13 @@ function MySummaryCategory() {
                                         news.categoryName,
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoIosArrowForward"], {}, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 21,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 19,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1229,18 +1226,18 @@ function MySummaryCategory() {
                                         children: news.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 24,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 23,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                            lineNumber: 20,
+                            lineNumber: 18,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1253,7 +1250,7 @@ function MySummaryCategory() {
                                             src: news.img
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                            lineNumber: 32,
+                                            lineNumber: 30,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1261,29 +1258,29 @@ function MySummaryCategory() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$LikeIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                    lineNumber: 34,
+                                                    lineNumber: 32,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$LinkCopyIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                    lineNumber: 35,
+                                                    lineNumber: 33,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$OrigLinkIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                                    lineNumber: 36,
+                                                    lineNumber: 34,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                            lineNumber: 33,
+                                            lineNumber: 31,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 29,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1291,24 +1288,24 @@ function MySummaryCategory() {
                                     children: news.summary
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 37,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                            lineNumber: 30,
+                            lineNumber: 28,
                             columnNumber: 13
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-                    lineNumber: 18,
+                    lineNumber: 16,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/tabpage/MySummaryCategory.tsx",
-            lineNumber: 16,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -1367,7 +1364,7 @@ const MySummaryCategoryStyled = __TURBOPACK__imported__module__$5b$project$5d2f$
             display: flex;
             flex-direction: row;
             gap: 1.25rem;
-            
+
             .text {
                 flex: 2;
                 height: 100%;
@@ -1384,25 +1381,21 @@ const MySummaryCategoryStyled = __TURBOPACK__imported__module__$5b$project$5d2f$
                 .etc {
                     display: flex;
                     flex-direction: row;
-                    padding-top: 1.25rem;
                     justify-content: center;
                     gap: 1rem;
                 }
             }
 
             @media (max-width: 768px) {
-                    flex-direction: column;
+                flex-direction: column;
 
-                    .text, .img-section {
-                        flex: none;  /* flex 비율 대신 각자 100% 너비 (혹은 auto) */
-                        width: 100%;
-                    }
-                
+                .text, .img-section {
+                    flex: none; /* flex 비율 대신 각자 100% 너비 (혹은 auto) */
+                    width: 100%;
+                }
             }
         }
     }
-
-    
 `;
 _c1 = MySummaryCategoryStyled;
 const __TURBOPACK__default__export__ = MySummaryCategory;
@@ -1532,7 +1525,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/constants/mypageData.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/mypage/common(temporary)/ThumbImg.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$LikeIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/mypage/common(temporary)/LikeIcon.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
+;
 ;
 ;
 ;
@@ -1544,30 +1539,39 @@ function MyBookmark() {
             children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "card",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            src: news.img
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: `#`,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: news.img
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
+                                lineNumber: 14,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                            lineNumber: 12,
+                            lineNumber: 13,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "content",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: `#`,
                                     className: "category",
                                     children: news.categoryName
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                    lineNumber: 14,
+                                    lineNumber: 17,
                                     columnNumber: 15
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: `#`,
                                     className: "title",
                                     children: news.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                    lineNumber: 15,
+                                    lineNumber: 18,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1575,53 +1579,46 @@ function MyBookmark() {
                                     children: news.summary
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                    lineNumber: 16,
+                                    lineNumber: 19,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "etc",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$LikeIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                                            fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                            lineNumber: 18,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bar"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                            lineNumber: 19,
-                                            columnNumber: 17
-                                        }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "date",
                                             children: news.createdAt
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                            lineNumber: 20,
+                                            lineNumber: 21,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$LikeIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                            fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
+                                            lineNumber: 23,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                                    lineNumber: 17,
+                                    lineNumber: 20,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                            lineNumber: 13,
+                            lineNumber: 16,
                             columnNumber: 13
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
-            lineNumber: 9,
+            lineNumber: 10,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -1634,32 +1631,70 @@ const MyBookmarkStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
     display: grid;
     justify-items: start;
     justify-content: start;
-    gap: 3.75rem 2rem;
-    
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
 
     .card {
-        width: 340px;
+        width: auto;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .category {
+                color: ${({ theme })=>theme.color.primary};
+                font-size: ${({ theme })=>theme.fontSize.extraSmall};
+                font-weight: ${({ theme })=>theme.fontWeight.medium};
+                width: max-content;
+            }
+
+            .title, .subtext {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                word-break: keep-all;
+            }
+
+            .title {
+                font-size: ${({ theme })=>theme.fontSize.large};
+                margin: 0;
+            }
+
+            .subtext {
+                font-size: ${({ theme })=>theme.fontSize.extraSmall};
+                color: ${({ theme })=>theme.color.subtext}
+            }
 
 
-        .title, .subtext {
-            width: 100%;
+            .etc {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
 
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            overflow: hidden;
-        }
-
-        .title {
-            font-size: ${({ theme })=>theme.fontSize.extraLarge};
-        }
-
-        .subtext {
-            font-size: ${({ theme })=>theme.fontSize.small};
-            color: ${({ theme })=>theme.color.subtext}
+                .bar {
+                    border-left: 1px solid ${({ theme })=>theme.color.border};
+                    margin: 0 1.25rem;
+                    height: 1.5rem;
+                }
+                
+                .date {
+                    font-size: ${({ theme })=>theme.fontSize.extraSmall};
+                    color: ${({ theme })=>theme.color.lightGrey};
+                }
+            }
         }
     }
+    
+    @media (${({ theme })=>theme.mediaQuery.tablet}) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (${({ theme })=>theme.mediaQuery.mobile}) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 `;
 _c1 = MyBookmarkStyled;
 const __TURBOPACK__default__export__ = MyBookmark;

@@ -934,23 +934,23 @@ function LikeIcon() {
             onClick: handleLike,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IoMdHeart"], {}, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
-                lineNumber: 20,
+                lineNumber: 15,
                 columnNumber: 42
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
-            lineNumber: 20,
+            lineNumber: 15,
             columnNumber: 9
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$styles$2f$Icons$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IconStyled"], {
             onClick: handleLike,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IoMdHeartEmpty"], {}, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
-                lineNumber: 22,
+                lineNumber: 17,
                 columnNumber: 42
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/mypage/common(temporary)/LikeIcon.tsx",
-            lineNumber: 22,
+            lineNumber: 17,
             columnNumber: 9
         }, this)
     }, void 0, false);
@@ -1049,7 +1049,7 @@ function ThumbImg({ src, width, height }) {
         alt: "news-img"
     }, void 0, false, {
         fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 }
@@ -1561,7 +1561,6 @@ const MyBookmarkStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
     @media (${({ theme })=>theme.mediaQuery.mobile}) {
         grid-template-columns: repeat(1, 1fr);
     }
-
 `;
 const __TURBOPACK__default__export__ = MyBookmark;
 }}),
@@ -1574,21 +1573,129 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/constants/mypageData.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/common/Button.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
 ;
 ;
+;
+;
+;
 function MyNewsletterSetting() {
+    const [selectCate, setSelectCate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const handleSelectCate = (news)=>{
+        const selectedCategory = selectCate.includes(news.categoryName);
+        if (!selectedCategory) {
+            setSelectCate([
+                news.categoryName,
+                ...selectCate
+            ]);
+        } else {
+            setSelectCate(selectCate.filter((el)=>el !== news.categoryName));
+        }
+    };
+    const handleSelectAll = (e)=>{
+        console.log(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length);
+        if (e && selectCate.length !== __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
+            setSelectCate(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((cate)=>cate.categoryName));
+        } else {
+            setSelectCate([]);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MyNewsletterSettingStyled, {
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            children: "MyNewsletterSetting"
-        }, void 0, false, {
-            fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-            lineNumber: 6,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        children: "뉴스레터 설정"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        children: [
+                            "선택된 카테고리를 재설정 해주신 후 완료 버튼을 눌러주세요.",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, this),
+                            "내일 보내드리는 뉴스레터부터 적용됩니다."
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                lineNumber: 43,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: "categories",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            scheme: "default",
+                            className: "all-category category-btn",
+                            onClick: (e)=>handleSelectAll(e),
+                            children: "전체"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                scheme: "default",
+                                onClick: ()=>{
+                                    handleSelectCate(news);
+                                },
+                                className: selectCate.includes(news.categoryName) ? "category-btn active" : "category-btn",
+                                children: news.categoryName
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                                lineNumber: 63,
+                                columnNumber: 13
+                            }, this)
+                        }, index, false, {
+                            fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, this))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                lineNumber: 51,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                children: selectCate.map((cate, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: cate
+                    }, index, false, {
+                        fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                        lineNumber: 75,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                lineNumber: 73,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-        lineNumber: 5,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }
@@ -1596,6 +1703,25 @@ const MyNewsletterSettingStyled = __TURBOPACK__imported__module__$5b$project$5d2
     displayName: "MyNewsletterSetting__MyNewsletterSettingStyled",
     componentId: "sc-44a01b75-0"
 })`
+
+    .categories {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+
+        .category-btn {
+            width: max-content;
+            color: ${({ theme })=>theme.color.primary};
+            border-radius: ${({ theme })=>theme.borderRadius.capsule};
+            border: 1px solid ${({ theme })=>theme.color.primary};
+        }
+
+        .active {
+            color: ${({ theme })=>theme.color.background};
+            background-color: ${({ theme })=>theme.color.primary};
+            border-radius: ${({ theme })=>theme.borderRadius.capsule};
+        }
+    }
 
 `;
 const __TURBOPACK__default__export__ = MyNewsletterSetting;

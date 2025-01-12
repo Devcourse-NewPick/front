@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_8fa4c2._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_0ed8e2._.js", {
 
 "[project]/src/components/common/svg/ToggleSVG.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -124,25 +124,25 @@ function SubscribeToggle() {
                     $toggle: toggle
                 }, void 0, false, {
                     fileName: "[project]/src/components/mypage/profile/SubscribeToggle.tsx",
-                    lineNumber: 28,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: toggle ? "구독 진행중" : "구독 일시정지 중"
                 }, void 0, false, {
                     fileName: "[project]/src/components/mypage/profile/SubscribeToggle.tsx",
-                    lineNumber: 29,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/mypage/profile/SubscribeToggle.tsx",
-            lineNumber: 27,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/mypage/profile/SubscribeToggle.tsx",
-        lineNumber: 25,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
@@ -228,8 +228,9 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 __turbopack_esm__({
     "BOOKMARK": (()=>BOOKMARK),
     "CATEGORY": (()=>CATEGORY),
+    "MYSUMMARYNEWS": (()=>MYSUMMARYNEWS),
     "SUBSCRIBE": (()=>SUBSCRIBE),
-    "SUMMARYNEWS": (()=>SUMMARYNEWS),
+    "SUBSCRIBECATEGORY": (()=>SUBSCRIBECATEGORY),
     "USERKEYWORD": (()=>USERKEYWORD)
 });
 const SUBSCRIBE = [
@@ -345,7 +346,7 @@ const CATEGORY = [
     },
     {
         "id": 3,
-        "category": "it"
+        "category": "IT"
     },
     {
         "id": 4,
@@ -354,62 +355,104 @@ const CATEGORY = [
     {
         "id": 5,
         "category": "세계"
+    },
+    {
+        "id": 6,
+        "category": "미국"
+    },
+    {
+        "id": 7,
+        "category": "여행"
+    },
+    {
+        "id": 8,
+        "category": "엔터"
+    },
+    {
+        "id": 9,
+        "category": "스포츠"
     }
 ];
-const SUMMARYNEWS = [
+const SUBSCRIBECATEGORY = [
     {
         "id": 1,
-        "categoryName": '정치',
+        "category": "정치"
+    },
+    {
+        "id": 2,
+        "category": "경제"
+    },
+    {
+        "id": 3,
+        "category": "IT"
+    },
+    {
+        "id": 4,
+        "category": "여행"
+    },
+    {
+        "id": 5,
+        "category": "엔터"
+    },
+    {
+        "id": 6,
+        "category": "스포츠"
+    }
+];
+const MYSUMMARYNEWS = [
+    {
+        "id": 1,
+        "categoryName": "정치",
         "userId": 1,
-        "createdAt": '2025-01-01',
-        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "createdAt": "2025-01-01",
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg",
         "likes": 1,
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
         "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
     },
     {
         "id": 2,
-        "categoryName": '경제',
+        "categoryName": "경제",
         "userId": 1,
-        "createdAt": '2025-01-01',
+        "createdAt": "2025-01-01",
         "likes": 1,
-        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg",
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
         "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage?"
     },
     {
         "id": 3,
-        "categoryName": 'IT',
+        "categoryName": "IT",
         "likes": 0,
-        "createdAt": '2025-01-01',
-        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "createdAt": "2025-01-01",
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg",
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
         "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
     },
     {
         "id": 4,
-        "categoryName": '생활',
+        "categoryName": "생활",
         "likes": 1,
-        "createdAt": '2025-01-01',
-        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "createdAt": "2025-01-01",
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg",
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
         "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
     },
     {
         "id": 5,
-        "categoryName": '세계',
+        "categoryName": "세계",
         "likes": 0,
-        "createdAt": '2025-01-01',
-        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "createdAt": "2025-01-01",
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg",
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
         "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
     },
     {
         "id": 6,
-        "categoryName": '미국',
+        "categoryName": "미국",
         "likes": 1,
-        "createdAt": '2025-01-01',
-        "img": 'https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg',
+        "createdAt": "2025-01-01",
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/09/03/window-7001026_640.jpg",
         "title": "How to develop the habits you want – and get rid of the ones you don’t (w/ James Clear)",
         "summary": "We all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscriptsWe all have habits - the good and not-so good kind. But can we use them to our advantage? In this week’s episode, Chris is joined by James Clear, entrepreneur and author of #1 New York Times bestseller, “Atomic Habits”, for a conversation about the power of habitual behavior. They discuss the science of habit formation, how to understand the forces that motivate you, and why the sum of many little habits can add up to a better life. For the full text transcript, visit go.ted.com/BHTranscripts"
     }
@@ -597,7 +640,7 @@ function TabBtn({ activeTab, setActiveTab }) {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     children: [
                         "구독한 뉴스레터 (",
-                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length,
+                        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MYSUMMARYNEWS"].length,
                         ")"
                     ]
                 }, void 0, true, {
@@ -731,34 +774,39 @@ const useMypage = ()=>{
             });
         }
     };
-    const handleSelectCate = (news)=>{
+    // 뉴스레터 설정 카테고리 선택
+    const handleSelectCate = (cate)=>{
         setSelectCate((prev)=>{
-            const isSelected = selectCate.includes(news.categoryName);
-            let newSelectCate;
+            const isSelected = selectCate.includes(cate.category);
+            let newSelectCate = [
+                ...prev
+            ];
             if (!isSelected) {
                 newSelectCate = [
-                    ...prev,
-                    news.categoryName
+                    ...newSelectCate,
+                    cate.category
                 ];
             } else {
-                newSelectCate = prev.filter((el)=>el !== news.categoryName);
+                newSelectCate = prev.filter((el)=>el !== cate.category);
             }
             // 전체 카테고리와 길이가 같으면 전체 true, 아니면 false
-            if (newSelectCate.length === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
+            if (newSelectCate.length === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CATEGORY"].length) {
                 setAllSelectCate(true);
             } else {
                 setAllSelectCate(false);
             }
+            console.log('지금꺼', newSelectCate);
             return newSelectCate;
         });
     };
+    // 뉴스레터 설정 카테고리 전체 선택
     const handleSelectAll = ()=>{
-        if (selectCate.length < __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
-            setSelectCate(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((cate)=>cate.categoryName));
-            setAllSelectCate(true);
-        } else if (selectCate.length === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
+        if (selectCate.length === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CATEGORY"].length) {
             setSelectCate([]);
             setAllSelectCate(false);
+        } else {
+            setSelectCate(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CATEGORY"].map((cate)=>cate.category));
+            setAllSelectCate(true);
         }
     };
     return {
@@ -766,7 +814,8 @@ const useMypage = ()=>{
         handleSelectCate,
         handleSelectAll,
         allSelectCate,
-        selectCate
+        selectCate,
+        setSelectCate
     };
 };
 _s(useMypage, "BqdWMaCuMkwvxezMhwtkMY/I9bQ=");
@@ -856,7 +905,7 @@ function SubscribeInfo({ activeCategory }) {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                     className: "categories",
-                    children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MYSUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             className: `category ${activeCategory === news.categoryName ? "active" : ""}`,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: (e)=>handleAnchorNavigation(e, news.categoryName),
@@ -1239,7 +1288,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 function MySummaryCategory() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MySummaryCategoryStyled, {
-            children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MYSUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "content",
                     id: news.categoryName,
                     children: [
@@ -1579,7 +1628,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$co
 function MyBookmark() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MyBookmarkStyled, {
-            children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MYSUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "card",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1748,6 +1797,139 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/src/components/common/ModalContents.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/common/Button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
+;
+;
+;
+function ModalContents({ icon, title, content, outlineButton, filledButton, onCancelClick, onConfirmClick }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ModalContentsStyled, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "contents",
+                children: [
+                    icon,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        children: title
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/common/ModalContents.tsx",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        children: content
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/common/ModalContents.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/common/ModalContents.tsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "btn-section",
+                children: [
+                    outlineButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        scheme: "secondary",
+                        size: "medium",
+                        onClick: onCancelClick,
+                        children: outlineButton
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/common/ModalContents.tsx",
+                        lineNumber: 23,
+                        columnNumber: 28
+                    }, this),
+                    filledButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        scheme: "primary",
+                        size: "medium",
+                        onClick: onConfirmClick,
+                        children: filledButton
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/common/ModalContents.tsx",
+                        lineNumber: 24,
+                        columnNumber: 27
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/common/ModalContents.tsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/common/ModalContents.tsx",
+        lineNumber: 16,
+        columnNumber: 5
+    }, this);
+}
+_c = ModalContents;
+const ModalContentsStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
+    displayName: "ModalContents__ModalContentsStyled",
+    componentId: "sc-6f5f2e39-0"
+})`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+
+    .contents {
+        text-align: center;
+        
+        svg {
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: 1rem;
+            color: ${({ theme })=>theme.color.primary};
+        }
+
+        h3 {
+            margin-bottom: 0.25rem;
+            font-size: ${({ theme })=>theme.fontSize.large};
+        }
+
+        p {
+            max-width: 22rem;
+            font-size: ${({ theme })=>theme.fontSize.extraSmall};
+            word-break: keep-all;
+            color: ${({ theme })=>theme.color.subtext};
+        }
+    }
+
+    .btn-section {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 1.25rem;
+        
+        button {
+            flex: 1;
+            width: 10rem;
+            height: 2.875rem;
+        }
+    }
+`;
+_c1 = ModalContentsStyled;
+const __TURBOPACK__default__export__ = ModalContents;
+var _c, _c1;
+__turbopack_refresh__.register(_c, "ModalContents");
+__turbopack_refresh__.register(_c1, "ModalContentsStyled");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1760,16 +1942,41 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/constants/mypageData.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/common/Button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/hooks/useMypage.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useModal$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/hooks/useModal.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$ModalContents$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/common/ModalContents.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/common/Modal.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$lu$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/lu/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
+'use client';
+;
+;
+;
+;
+;
 ;
 ;
 ;
 ;
 function MyNewsletterSetting() {
     _s();
-    const { handleSelectCate, handleSelectAll, allSelectCate, selectCate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
+    const { handleSelectCate, handleSelectAll, allSelectCate, selectCate, setSelectCate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
+    const { isOpen, modalType, openModal, closeModal } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useModal$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useModal"])();
+    // 내가 선택한 카테고리가 기본으로 화면 로딩되면 updateCate에 들어가 있어야 함.
+    // 그리고 카테고리 업데이트되면 updateCate가 동작해야 함.
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])({
+        "MyNewsletterSetting.useLayoutEffect": ()=>{
+            const subscribedNames = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUBSCRIBECATEGORY"].map({
+                "MyNewsletterSetting.useLayoutEffect.subscribedNames": (item)=>item.category
+            }["MyNewsletterSetting.useLayoutEffect.subscribedNames"]);
+            const uniqueSubscribed = Array.from(new Set(subscribedNames));
+            setSelectCate(uniqueSubscribed);
+        }
+    }["MyNewsletterSetting.useLayoutEffect"], [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUBSCRIBECATEGORY"]
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MyNewsletterSettingStyled, {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1779,7 +1986,7 @@ function MyNewsletterSetting() {
                         children: "뉴스레터 설정"
                     }, void 0, false, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 13,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1787,26 +1994,27 @@ function MyNewsletterSetting() {
                             "선택된 카테고리를 재설정 해주신 후 완료 버튼을 눌러주세요.",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                                lineNumber: 16,
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, this),
                             "내일 보내드리는 뉴스레터부터 적용됩니다."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 14,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                lineNumber: 12,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                className: "categories",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "category-section",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "all-category",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             type: "button",
                             scheme: "default",
@@ -1815,50 +2023,51 @@ function MyNewsletterSetting() {
                             children: "전체"
                         }, void 0, false, {
                             fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                            lineNumber: 22,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 21,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bar"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                            lineNumber: 32,
-                            columnNumber: 11
-                        }, this)
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bar"
                     }, void 0, false, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 31,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this),
-                    __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                type: "button",
-                                scheme: "default",
-                                onClick: ()=>{
-                                    handleSelectCate(news);
-                                },
-                                className: selectCate.includes(news.categoryName) ? "category-btn active" : "category-btn",
-                                children: news.categoryName
-                            }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                        className: "categories",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CATEGORY"].map((cate, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    type: "button",
+                                    scheme: "default",
+                                    onClick: ()=>{
+                                        handleSelectCate(cate);
+                                    },
+                                    className: selectCate.includes(cate.category) ? "category-btn active" : "category-btn",
+                                    children: cate.category
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                                    lineNumber: 51,
+                                    columnNumber: 15
+                                }, this)
+                            }, index, false, {
                                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                                lineNumber: 36,
+                                lineNumber: 50,
                                 columnNumber: 13
-                            }, this)
-                        }, index, false, {
-                            fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                            lineNumber: 35,
-                            columnNumber: 11
-                        }, this))
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                        lineNumber: 48,
+                        columnNumber: 9
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                lineNumber: 20,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1867,27 +2076,52 @@ function MyNewsletterSetting() {
                     type: "submit",
                     scheme: "primary",
                     size: "large",
+                    onClick: ()=>openModal("submit"),
                     children: "설정완료"
                 }, void 0, false, {
                     fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                    lineNumber: 56,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                lineNumber: 55,
+                lineNumber: 64,
                 columnNumber: 7
+            }, this),
+            isOpen && modalType === "submit" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                isOpen: isOpen,
+                onClose: closeModal,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$ModalContents$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$lu$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LuMailCheck"], {}, void 0, false, {
+                        fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                        lineNumber: 71,
+                        columnNumber: 19
+                    }, void 0),
+                    title: "구독 설정이 완료되었습니다",
+                    content: `내일부터 새로운 뉴스레터를 보내드려요.`,
+                    filledButton: "확인",
+                    onConfirmClick: closeModal
+                }, void 0, false, {
+                    fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                    lineNumber: 70,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
+                lineNumber: 69,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-        lineNumber: 11,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
-_s(MyNewsletterSetting, "FSoLqmmF+FLk+HGAEtJvsFY6RHk=", false, function() {
+_s(MyNewsletterSetting, "KeQimoCUa5AvuQdblwZOv3vWHgo=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useModal$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useModal"]
     ];
 });
 _c = MyNewsletterSetting;
@@ -1910,18 +2144,26 @@ const MyNewsletterSettingStyled = __TURBOPACK__imported__module__$5b$project$5d2
         }
     }
 
-    .categories {
+    .category-section {
         display: flex;
         flex-direction: row;
-        gap: 0.5rem;
+        gap: 0.875rem;
         background-color: ${({ theme })=>theme.color.surface};
         padding: 2rem;
         border-top: 1px solid ${({ theme })=>theme.color.text};
         border-bottom: 1px solid ${({ theme })=>theme.color.text};
 
+
         .bar {
             border-left: 1px solid ${({ theme })=>theme.color.lightGrey};
-            height: 100%;
+            height: auto;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
         .category-btn {
@@ -1936,13 +2178,14 @@ const MyNewsletterSettingStyled = __TURBOPACK__imported__module__$5b$project$5d2
             background-color: ${({ theme })=>theme.color.primary};
             border-radius: ${({ theme })=>theme.borderRadius.capsule};
         }
+
     }
 
     .btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         button {
             width: 14rem;
         }
@@ -2070,4 +2313,4 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 }}),
 }]);
 
-//# sourceMappingURL=src_8fa4c2._.js.map
+//# sourceMappingURL=src_0ed8e2._.js.map

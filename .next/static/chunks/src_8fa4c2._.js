@@ -712,7 +712,15 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/constants/mypageData.ts [app-client] (ecmascript)");
+var _s = __turbopack_refresh__.signature();
+;
+;
 const useMypage = ()=>{
+    _s();
+    const [selectCate, setSelectCate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [allSelectCate, setAllSelectCate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const handleAnchorNavigation = (e, id)=>{
         e.preventDefault();
         const element = document.getElementById(id);
@@ -723,10 +731,45 @@ const useMypage = ()=>{
             });
         }
     };
+    const handleSelectCate = (news)=>{
+        setSelectCate((prev)=>{
+            const isSelected = selectCate.includes(news.categoryName);
+            let newSelectCate;
+            if (!isSelected) {
+                newSelectCate = [
+                    ...prev,
+                    news.categoryName
+                ];
+            } else {
+                newSelectCate = prev.filter((el)=>el !== news.categoryName);
+            }
+            // 전체 카테고리와 길이가 같으면 전체 true, 아니면 false
+            if (newSelectCate.length === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
+                setAllSelectCate(true);
+            } else {
+                setAllSelectCate(false);
+            }
+            return newSelectCate;
+        });
+    };
+    const handleSelectAll = ()=>{
+        if (selectCate.length < __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
+            setSelectCate(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((cate)=>cate.categoryName));
+            setAllSelectCate(true);
+        } else if (selectCate.length === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
+            setSelectCate([]);
+            setAllSelectCate(false);
+        }
+    };
     return {
-        handleAnchorNavigation
+        handleAnchorNavigation,
+        handleSelectCate,
+        handleSelectAll,
+        allSelectCate,
+        selectCate
     };
 };
+_s(useMypage, "BqdWMaCuMkwvxezMhwtkMY/I9bQ=");
 const __TURBOPACK__default__export__ = useMypage;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
@@ -1659,6 +1702,7 @@ const MyBookmarkStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
 
             .title {
                 font-size: ${({ theme })=>theme.fontSize.large};
+                line-height: 1.2;
                 margin: 0;
             }
 
@@ -1715,7 +1759,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/constants/mypageData.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/common/Button.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/hooks/useMypage.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
@@ -1725,26 +1769,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 function MyNewsletterSetting() {
     _s();
-    const [selectCate, setSelectCate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const handleSelectCate = (news)=>{
-        const selectedCategory = selectCate.includes(news.categoryName);
-        if (!selectedCategory) {
-            setSelectCate([
-                news.categoryName,
-                ...selectCate
-            ]);
-        } else {
-            setSelectCate(selectCate.filter((el)=>el !== news.categoryName));
-        }
-    };
-    const handleSelectAll = (e)=>{
-        console.log(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length);
-        if (e && selectCate.length !== __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].length) {
-            setSelectCate(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((cate)=>cate.categoryName));
-        } else {
-            setSelectCate([]);
-        }
-    };
+    const { handleSelectCate, handleSelectAll, allSelectCate, selectCate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MyNewsletterSettingStyled, {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1754,7 +1779,7 @@ function MyNewsletterSetting() {
                         children: "뉴스레터 설정"
                     }, void 0, false, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 44,
+                        lineNumber: 13,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1762,20 +1787,20 @@ function MyNewsletterSetting() {
                             "선택된 카테고리를 재설정 해주신 후 완료 버튼을 눌러주세요.",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                                lineNumber: 47,
+                                lineNumber: 16,
                                 columnNumber: 11
                             }, this),
                             "내일 보내드리는 뉴스레터부터 적용됩니다."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 45,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                lineNumber: 43,
+                lineNumber: 12,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1784,17 +1809,17 @@ function MyNewsletterSetting() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             scheme: "default",
-                            className: "all-category category-btn",
-                            onClick: (e)=>handleSelectAll(e),
+                            className: allSelectCate ? "active category-btn" : "category-btn",
+                            onClick: ()=>handleSelectAll(),
                             children: "전체"
                         }, void 0, false, {
                             fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                            lineNumber: 53,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 52,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SUMMARYNEWS"].map((news, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1807,18 +1832,18 @@ function MyNewsletterSetting() {
                                 children: news.categoryName
                             }, void 0, false, {
                                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                                lineNumber: 63,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, this)
                         }, index, false, {
                             fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                            lineNumber: 62,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                lineNumber: 51,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1826,22 +1851,26 @@ function MyNewsletterSetting() {
                         children: cate
                     }, index, false, {
                         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                        lineNumber: 75,
+                        lineNumber: 44,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-                lineNumber: 73,
+                lineNumber: 42,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/mypage/tabpage/MyNewsletterSetting.tsx",
-        lineNumber: 42,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
-_s(MyNewsletterSetting, "cGcmDU5Bkdpch8L84db4tzNtRYg=");
+_s(MyNewsletterSetting, "PWKcEd2OZxZEi/O3LCIz9eMm2TY=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useMypage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    ];
+});
 _c = MyNewsletterSetting;
 const MyNewsletterSettingStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
     displayName: "MyNewsletterSetting__MyNewsletterSettingStyled",
@@ -1865,6 +1894,7 @@ const MyNewsletterSettingStyled = __TURBOPACK__imported__module__$5b$project$5d2
             background-color: ${({ theme })=>theme.color.primary};
             border-radius: ${({ theme })=>theme.borderRadius.capsule};
         }
+
     }
 
 `;

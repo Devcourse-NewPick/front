@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/hyeon/Desktop/coding/4thTeamProject/src/app/news/%5Bid%5D/page.tsx"],"sourcesContent":["'use client'\n\nimport styled from \"styled-components\";\nimport { useParams } from \"next/navigation\";\n\nfunction NewsletterDetailPage() {\n\n  const {id} = useParams();\n\n  return (\n    <NewsletterDetailPageStyled>\n      <div>hello슬러그 {id}</div>\n    </NewsletterDetailPageStyled>\n  );\n}\n\nconst NewsletterDetailPageStyled = styled.div`\n\n`;\n\nexport default NewsletterDetailPage;"],"names":[],"mappings":";;;;AAGA;AADA;;;AAFA;;;AAKA,SAAS;;IAEP,MAAM,EAAC,EAAE,EAAC,GAAG,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IAErB,qBACE,6LAAC;kBACC,cAAA,6LAAC;;gBAAI;gBAAU;;;;;;;;;;;;AAGrB;GATS;;QAEM,qIAAA,CAAA,YAAS;;;KAFf;AAWT,MAAM,6BAA6B,yLAAA,CAAA,UAAM,CAAC,GAAG;;;EAAA,CAAC;;AAE9C,CAAC;MAFK;uCAIS"}},
+    {"offset": {"line": 58, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

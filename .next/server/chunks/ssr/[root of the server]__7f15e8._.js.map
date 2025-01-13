@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/hyeon/Desktop/coding/4thTeamProject/src/app/news/%5Bid%5D/page.tsx"],"sourcesContent":["import styled from \"styled-components\";\n\nasync function NewsletterDetailPage({params,}: {params: Promise<{id: 2}>}) {\n  const id = (await params).id\n\n  return (\n    <NewsletterDetailPageStyled>\n      <div>hello {id}</div>\n    </NewsletterDetailPageStyled>\n  );\n}\n\nconst NewsletterDetailPageStyled = styled.div`\n\n`;\n\nexport default NewsletterDetailPage;"],"names":[],"mappings":";;;;AAAA;;;AAEA,eAAe,qBAAqB,EAAC,MAAM,EAA8B;IACvE,MAAM,KAAK,CAAC,MAAM,MAAM,EAAE,EAAE;IAE5B,qBACE,8OAAC;kBACC,cAAA,8OAAC;;gBAAI;gBAAO;;;;;;;;;;;;AAGlB;AAEA,MAAM,6BAA6B,2KAAA,CAAA,UAAM,CAAC,GAAG;;;EAAA,CAAC;;AAE9C,CAAC;uCAEc"}},
+    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

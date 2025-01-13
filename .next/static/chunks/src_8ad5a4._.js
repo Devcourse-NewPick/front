@@ -522,8 +522,8 @@ function SubscribeToggle() {
         closeModal();
         router.push("/mypage");
     };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])({
-        "SubscribeToggle.useLayoutEffect": ()=>{
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "SubscribeToggle.useEffect": ()=>{
             const subscribeState = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2f$mypageData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["USER2"].subscribe;
             if (subscribeState === 1) {
                 setSubsToggle(false);
@@ -536,7 +536,7 @@ function SubscribeToggle() {
                 setNotSubsToggle(false);
             }
         }
-    }["SubscribeToggle.useLayoutEffect"], []);
+    }["SubscribeToggle.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SubscribeToggleStyled, {
         children: [
             notSubsToggle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -622,7 +622,7 @@ function SubscribeToggle() {
         columnNumber: 5
     }, this);
 }
-_s(SubscribeToggle, "SrkwSXkSa7vRxY1voFChtR91mig=", false, function() {
+_s(SubscribeToggle, "tQKUqOt4p2j03hWkUl2gcMf2fOU=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useModal$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useModal"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]

@@ -26,10 +26,7 @@ const Title = ({ children, size, weight, color })=>{
     }, this);
 };
 _c = Title;
-const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].p.withConfig({
-    displayName: "Title__StyledTitle",
-    componentId: "sc-ac090baf-0"
-})`
+const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].p`
 	font-size: ${({ theme, size })=>theme.heading[size].fontSize};
 	font-weight: ${({ theme, weight })=>theme.fontWeight[weight || 'regular']};
 	color: ${({ theme, color })=>theme.color[color || 'text']};
@@ -88,10 +85,7 @@ function Error() {
     }, this);
 }
 _c = Error;
-const StyledError = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "not-found__StyledError",
-    componentId: "sc-9c524d7a-0"
-})`
+const StyledError = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
   display: flex;
   flex-direction: column;
   align-items: center;

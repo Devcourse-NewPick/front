@@ -584,9 +584,6 @@ const StyledButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_module
             'isLoading',
             'styles'
         ].includes(prop)
-}).withConfig({
-    displayName: "Button__StyledButton",
-    componentId: "sc-8c374797-0"
 })`
 	position: relative;
 	display: flex;
@@ -762,10 +759,7 @@ const Toast = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node
     }, this);
 });
 Toast.displayName = "Toast";
-const StyledToast = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Toast__StyledToast",
-    componentId: "sc-7115c73b-0"
-})`
+const StyledToast = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -927,10 +921,7 @@ const ToastContainer = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$
     );
 });
 ToastContainer.displayName = "ToastContainer";
-const StyledToastContainer = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "ToastContainer__StyledToastContainer",
-    componentId: "sc-ea3f7f72-0"
-})`
+const StyledToastContainer = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
   pointer-events: none;
   width: 100vw;
   height: 100vh;
@@ -1108,10 +1099,7 @@ const MoLogo = ({ className, ...props })=>{
         columnNumber: 5
     }, this);
 };
-const IconStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].svg.withConfig({
-    displayName: "LogoSVG__IconStyled",
-    componentId: "sc-2f2f8746-0"
-})`
+const IconStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].svg`
     path {
         fill: currentColor;
     }
@@ -1165,10 +1153,7 @@ const Logo = ({ logoType })=>{
         columnNumber: 5
     }, this);
 };
-const StyledLogo = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Logo__StyledLogo",
-    componentId: "sc-5f86beb6-0"
-})`
+const StyledLogo = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
     color: ${({ theme })=>theme.color.primary};
     font-size: ${({ theme })=>theme.fontSize.large};
     font-weight: ${({ theme })=>theme.fontWeight.bold};
@@ -1333,10 +1318,7 @@ function Modal({ children, isOpen, onClose }) {
     }, this), document.body // 포털 렌더링 대상 DOM
     );
 }
-const StyledModal = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Modal__StyledModal",
-    componentId: "sc-9eb42e8f-0"
-})`
+const StyledModal = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
 	@keyframes fade-in {
 		from {
 			opacity: 0;
@@ -1489,10 +1471,7 @@ const Dropdown = ({ children, toggleButton, isOpen = false, className })=>{
         columnNumber: 5
     }, this);
 };
-const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Dropdown__StyledDropdown",
-    componentId: "sc-6c6eed3-0"
-})`
+const StyledDropdown = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
     position: relative;
     cursor: pointer;
 
@@ -1700,10 +1679,7 @@ const Navigation = ()=>{
         columnNumber: 5
     }, this);
 };
-const StyledNavigation = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styled"].nav.withConfig({
-    displayName: "Navigation__StyledNavigation",
-    componentId: "sc-fec254c6-0"
-})`
+const StyledNavigation = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styled"].nav`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1805,10 +1781,7 @@ const ThemeSwitcher = ({ className, styles })=>{
         columnNumber: 5
     }, this);
 };
-const StyledThemeSwitcher = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "ThemeSwitcher__StyledThemeSwitcher",
-    componentId: "sc-785fb4a6-0"
-})`
+const StyledThemeSwitcher = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1888,10 +1861,7 @@ const Drawer = ()=>{
         columnNumber: 5
     }, this);
 };
-const StyledDrawerButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Drawer__StyledDrawerButton",
-    componentId: "sc-ed7adeeb-0"
-})`
+const StyledDrawerButton = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
     position: relative;
     width: 1.2rem;
     aspect-ratio: 1.1 / 1;
@@ -2143,10 +2113,7 @@ const Header = ()=>{
         columnNumber: 5
     }, this);
 };
-const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Header__StyledHeader",
-    componentId: "sc-5944b458-0"
-})`
+const StyledHeader = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
     width: 100%;
     padding: 0;
     margin: 0;
@@ -2299,10 +2266,7 @@ const Footer = ()=>{
         columnNumber: 3
     }, this);
 };
-const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].footer.withConfig({
-    displayName: "Footer__StyledFooter",
-    componentId: "sc-312610ea-0"
-})`
+const StyledFooter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].footer`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -2412,10 +2376,7 @@ function TopBtn() {
         }, this)
     }, void 0, false);
 }
-const TopBtnStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].button.withConfig({
-    displayName: "TopBtn__TopBtnStyled",
-    componentId: "sc-77bc56c-0"
-})`
+const TopBtnStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].button`
     position: fixed;
     height: 4rem;
     width: 4rem;
@@ -2503,20 +2464,14 @@ const Layout = ({ children })=>{
         columnNumber: 5
     }, this);
 };
-const StyledLayout = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Layout__StyledLayout",
-    componentId: "sc-fc63ec60-0"
-})`
+const StyledLayout = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
 `;
-const Content = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].main.withConfig({
-    displayName: "Layout__Content",
-    componentId: "sc-fc63ec60-1"
-})`
+const Content = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].main`
   width: 100%;
   max-width: ${({ theme })=>theme.layout.width.large};
   margin: 0 auto;

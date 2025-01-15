@@ -26,10 +26,7 @@ const Title = ({ children, size, weight, color })=>{
     }, this);
 };
 _c = Title;
-const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].p.withConfig({
-    displayName: "Title__StyledTitle",
-    componentId: "sc-ac090baf-0"
-})`
+const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].p`
 	font-size: ${({ theme, size })=>theme.heading[size].fontSize};
 	font-weight: ${({ theme, weight })=>theme.fontWeight[weight || 'regular']};
 	color: ${({ theme, color })=>theme.color[color || 'text']};
@@ -96,10 +93,7 @@ const InputText = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$
     }, this);
 });
 _c1 = InputText;
-const StyledInputText = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "InputText__StyledInputText",
-    componentId: "sc-a392ceae-0"
-})`
+const StyledInputText = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	display: flex;
 	width: 100%;
 	line-height: 1.8;
@@ -196,10 +190,7 @@ const InputCheck = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f
     }, this);
 });
 _c1 = InputCheck;
-const StyledInputCheck = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "InputCheck__StyledInputCheck",
-    componentId: "sc-89aa6a05-0"
-})`
+const StyledInputCheck = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -375,10 +366,7 @@ const InputSelect = ({ name, value, label, options, onChange, onBlur, placeholde
 };
 _s(InputSelect, "NGpw5VinEy0wG5SwV+miWVA8y3E=");
 _c = InputSelect;
-const StyledInputSelect = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "InputSelect__StyledInputSelect",
-    componentId: "sc-81a8c8b-0"
-})`
+const StyledInputSelect = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	position: relative;
 
 	.select-display {
@@ -520,10 +508,7 @@ const InputDate = ({ label, onChange, onBlur })=>{
 };
 _s(InputDate, "rhrbPH1/NtfhiyDl62tZ0yGffOM=");
 _c = InputDate;
-const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "InputDate__StyledInputDate",
-    componentId: "sc-9cca1845-0"
-})`
+const StyledInputDate = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	display: flex;
 	flex-direction: column;
 	z-index: 1000;
@@ -634,10 +619,7 @@ function Loader({ size }) {
     }, this);
 }
 _c = Loader;
-const StyledLoader = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Loader__StyledLoader",
-    componentId: "sc-87b2e6b-0"
-})`
+const StyledLoader = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	padding: ${({ $size })=>$size ? '0' : '2rem'} 0;
 	text-align: center;
 
@@ -1121,10 +1103,7 @@ _s(TestPage, "gKywPCfSoVDNu3e7oMFNd4/CAV4=", false, function() {
     ];
 });
 _c = TestPage;
-const StyledTestPage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "page__StyledTestPage",
-    componentId: "sc-875b9bf8-0"
-})`
+const StyledTestPage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	padding: 2rem;
 	font-family: Arial, sans-serif;
 

@@ -1452,77 +1452,84 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.browser.esm.js [app-client] (ecmascript)");
 ;
 ;
-// height가 없을 경우 높이값 가변
-function ThumbImg({ src, height }) {
+;
+function ThumbImg({ src, height, aspectratio = "auto" }) {
     const imageOnErrorHandler = (e)=>{
         e.currentTarget.onerror = null;
         e.currentTarget.src = "/img/newpick_default_img.jpg";
     };
-    const validSrc = src ?? "/img/newpick_default_img.jpg";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ContainerStyled, {
         height: height,
+        aspectratio: aspectratio,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceStyled, {
-                type: "image/webp",
-                src: validSrc
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceStyled, {}, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-                lineNumber: 20,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThumbImgStyled, {
                 src: src,
                 alt: "news-img",
-                onError: imageOnErrorHandler,
-                loading: "lazy"
+                loading: "lazy",
+                quality: 75,
+                sizes: "100vw",
+                fill: true,
+                onError: imageOnErrorHandler
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-                lineNumber: 24,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-        lineNumber: 19,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
 _c = ThumbImg;
-const ContainerStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].picture`
-    position: relative;
+const ThumbImgStyled = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])`
+    position: relative !important;
     display: block;
-    border-radius: ${({ theme })=>theme.borderRadius.medium};
-    margin-bottom: 1.25rem;
-    height: ${({ height })=>height || "auto"};
-    overflow: hidden;
-    aspect-ratio: auto;
+    height: unset !important;
     width: 100%;
+
+    max-height: 24rem;
+    min-height: 2rem;
+
+    object-fit: cover;
+    content-visibility: auto;
+    object-position: center;
 `;
-_c1 = ContainerStyled;
+_c1 = ThumbImgStyled;
 const SourceStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].source`
 `;
 _c2 = SourceStyled;
-const ThumbImgStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].img`
+const ContainerStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
+    position: relative;
     display: block;
-    object-fit: cover;
-    vertical-align: middle;
-    object-position: center;
-    height: 100%;
-    width: 100%;
-    max-height: 28rem;
-    min-height: 2rem;
-    content-visibility : auto;
+
+    overflow: hidden;
+    border-radius: ${({ theme })=>theme.borderRadius.medium};
+    margin-bottom: 1.25rem;
+
+    height: ${({ height })=>height};
+
+    ${ThumbImgStyled} {
+        aspect-ratio: ${({ aspectratio })=>aspectratio};
+    }
 `;
-_c3 = ThumbImgStyled;
+_c3 = ContainerStyled;
 const __TURBOPACK__default__export__ = ThumbImg;
 var _c, _c1, _c2, _c3;
 __turbopack_refresh__.register(_c, "ThumbImg");
-__turbopack_refresh__.register(_c1, "ContainerStyled");
+__turbopack_refresh__.register(_c1, "ThumbImgStyled");
 __turbopack_refresh__.register(_c2, "SourceStyled");
-__turbopack_refresh__.register(_c3, "ThumbImgStyled");
+__turbopack_refresh__.register(_c3, "ContainerStyled");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -1605,7 +1612,8 @@ function MySubscribeContents({ summaryInfo }) {
                                     className: "img-section",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: info.img || null
+                                            src: info.img || null,
+                                            height: 'auto'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySubscribeContents.tsx",
                                             lineNumber: 34,
@@ -2093,7 +2101,7 @@ function MyBookmark() {
                                 href: `#`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: info.img,
-                                    height: "13rem"
+                                    aspectratio: 4 / 3
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
                                     lineNumber: 41,

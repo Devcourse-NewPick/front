@@ -1344,66 +1344,73 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/styled-components/dist/styled-components.esm.js [app-ssr] (ecmascript)");
 ;
 ;
-// height가 없을 경우 높이값 가변
-function ThumbImg({ src, height }) {
+;
+function ThumbImg({ src, height, aspectratio = "auto" }) {
     const imageOnErrorHandler = (e)=>{
         e.currentTarget.onerror = null;
         e.currentTarget.src = "/img/newpick_default_img.jpg";
     };
-    const validSrc = src ?? "/img/newpick_default_img.jpg";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ContainerStyled, {
         height: height,
+        aspectratio: aspectratio,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceStyled, {
-                type: "image/webp",
-                src: validSrc
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SourceStyled, {}, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-                lineNumber: 20,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ThumbImgStyled, {
                 src: src,
                 alt: "news-img",
-                onError: imageOnErrorHandler,
-                loading: "lazy"
+                loading: "lazy",
+                quality: 75,
+                sizes: "100vw",
+                fill: true,
+                onError: imageOnErrorHandler
             }, void 0, false, {
                 fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-                lineNumber: 24,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/mypage/common(temporary)/ThumbImg.tsx",
-        lineNumber: 19,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
-const ContainerStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].picture`
-    position: relative;
+const ThumbImgStyled = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])`
+    position: relative !important;
     display: block;
-    border-radius: ${({ theme })=>theme.borderRadius.medium};
-    margin-bottom: 1.25rem;
-    height: ${({ height })=>height || "auto"};
-    overflow: hidden;
-    aspect-ratio: auto;
+    height: unset !important;
     width: 100%;
+
+    max-height: 24rem;
+    min-height: 2rem;
+
+    object-fit: cover;
+    content-visibility: auto;
+    object-position: center;
 `;
 const SourceStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].source`
 `;
-const ThumbImgStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].img`
+const ContainerStyled = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].div`
+    position: relative;
     display: block;
-    object-fit: cover;
-    vertical-align: middle;
-    object-position: center;
-    height: 100%;
-    width: 100%;
-    max-height: 28rem;
-    min-height: 2rem;
-    content-visibility : auto;
+
+    overflow: hidden;
+    border-radius: ${({ theme })=>theme.borderRadius.medium};
+    margin-bottom: 1.25rem;
+
+    height: ${({ height })=>height};
+
+    ${ThumbImgStyled} {
+        aspect-ratio: ${({ aspectratio })=>aspectratio};
+    }
 `;
 const __TURBOPACK__default__export__ = ThumbImg;
 }}),
@@ -1485,7 +1492,8 @@ function MySubscribeContents({ summaryInfo }) {
                                     className: "img-section",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: info.img || null
+                                            src: info.img || null,
+                                            height: 'auto'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/mypage/tabpage/MySubscribeContents.tsx",
                                             lineNumber: 34,
@@ -1920,7 +1928,7 @@ function MyBookmark() {
                                 href: `#`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$mypage$2f$common$28$temporary$292f$ThumbImg$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     src: info.img,
-                                    height: "13rem"
+                                    aspectratio: 4 / 3
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/mypage/tabpage/MyBookmark.tsx",
                                     lineNumber: 41,

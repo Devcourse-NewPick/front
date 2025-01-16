@@ -1,4 +1,1 @@
-{
-  "/news/[slug]/page": "app/news/[slug]/page.js",
-  "/api/news/[slug]/route": "app/api/news/[slug]/route.js"
-}
+{}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/hyeon/Desktop/coding/4thTeamProject/src/app/news/%5Bslug%5D/page.tsx"],"sourcesContent":["\"use client\"\n\nimport styled from \"styled-components\";\nimport { useParams } from \"next/navigation\";\n\nfunction NewsletterDetailPage() {\n\n  const {slug} = useParams();\n\n  return (\n    <NewsletterDetailPageStyled>\n      \n    </NewsletterDetailPageStyled>\n  );\n}\n\nconst NewsletterDetailPageStyled = styled.div`\n\n`;\n\nexport default NewsletterDetailPage;"],"names":[],"mappings":";;;;AAGA;AADA;;;AAFA;;;AAKA,SAAS;;IAEP,MAAM,EAAC,IAAI,EAAC,GAAG,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IAEvB,qBACE,6LAAC;;;;;AAIL;GATS;;QAEQ,qIAAA,CAAA,YAAS;;;KAFjB;AAWT,MAAM,6BAA6B,yLAAA,CAAA,UAAM,CAAC,GAAG;;;EAAA,CAAC;;AAE9C,CAAC;MAFK;uCAIS"}},
-    {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

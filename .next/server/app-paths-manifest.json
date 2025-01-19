@@ -1,3 +1,8 @@
 {
-  "/mypage/page": "app/mypage/page.js"
+  "/mypage/page": "app/mypage/page.js",
+  "/page": "app/page.js",
+  "/test/page": "app/test/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/article/[slug]/page": "app/article/[slug]/page.js",
+  "/api/article/[slug]/route": "app/api/article/[slug]/route.js"
 }

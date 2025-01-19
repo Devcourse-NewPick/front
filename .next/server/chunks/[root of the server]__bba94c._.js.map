@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/hyeon/Desktop/coding/4thTeamProject/src/app/api/article/%5Bslug%5D/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nexport async function GET(\n  request: Request,\n  { params }: { params: { slug: string } }\n) {\n  const slug = (await params).slug;\n\n  try {\n\n    console.log('params:',slug)\n    const res = await fetch(`http://localhost:3001/news/${slug}`,\n      {\n        headers: {\n          'Content-Type': 'application/json',\n          'Accept': 'application/json',\n        },\n      })\n    if (!res.ok) {\n      throw new Error(\"Failed to fetch data\");\n    }\n    const data = await res.json()\n    return NextResponse.json(data);\n\n  } catch (err) {\n    console.error(err)\n    return NextResponse.error();\n  }\n}\n"],"names":[],"mappings":";;;AAAA;;AAEO,eAAe,IACpB,OAAgB,EAChB,EAAE,MAAM,EAAgC;IAExC,MAAM,OAAO,CAAC,MAAM,MAAM,EAAE,IAAI;IAEhC,IAAI;QAEF,QAAQ,GAAG,CAAC,WAAU;QACtB,MAAM,MAAM,MAAM,MAAM,CAAC,2BAA2B,EAAE,MAAM,EAC1D;YACE,SAAS;gBACP,gBAAgB;gBAChB,UAAU;YACZ;QACF;QACF,IAAI,CAAC,IAAI,EAAE,EAAE;YACX,MAAM,IAAI,MAAM;QAClB;QACA,MAAM,OAAO,MAAM,IAAI,IAAI;QAC3B,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAE3B,EAAE,OAAO,KAAK;QACZ,QAAQ,KAAK,CAAC;QACd,OAAO,gIAAA,CAAA,eAAY,CAAC,KAAK;IAC3B;AACF"}},
-    {"offset": {"line": 80, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

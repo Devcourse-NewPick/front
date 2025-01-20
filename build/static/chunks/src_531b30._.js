@@ -190,10 +190,7 @@ const Title = ({ children, className, size = 'medium', weight, color })=>{
     }, this);
 };
 _c = Title;
-const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].h1.withConfig({
-    displayName: "Title__StyledTitle",
-    componentId: "sc-ac090baf-0"
-})`
+const StyledTitle = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].h1`
 	font-size: ${({ theme, $size })=>theme.heading[$size].fontSize};
 	font-weight: ${({ theme, $weight })=>theme.fontWeight[$weight || 'regular']};
 	color: ${({ theme, $color })=>theme.color[$color || 'text']};
@@ -238,10 +235,7 @@ const FullWidthPanel = ({ children, border, background, color })=>{
 };
 _c = FullWidthPanel;
 const __TURBOPACK__default__export__ = FullWidthPanel;
-const StyledPanel = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].section.withConfig({
-    displayName: "FullWidthPanel__StyledPanel",
-    componentId: "sc-336e3eb4-0"
-})`
+const StyledPanel = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].section`
 	position: relative;
 	width: 100vw;
 	height: fit-content;
@@ -425,10 +419,7 @@ const Image = ({ src, alt, width = 400, height = 300, ratio = 'wide', borderRadi
 };
 _s(Image, "IYJBVyHsXBw9t28YX/YBiMCcttM=");
 _c = Image;
-const StyledImage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Image__StyledImage",
-    componentId: "sc-ced08196-0"
-})`
+const StyledImage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	width: fit-content;
 	height: fit-content;
 	overflow: hidden;
@@ -666,10 +657,7 @@ _s(BannerSlider, "MNSdCAjG2Yvmt4f+hzPAWVgyagM=", false, function() {
     ];
 });
 _c = BannerSlider;
-const StyledSlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "BannerSlider__StyledSlider",
-    componentId: "sc-4c19eddd-0"
-})`
+const StyledSlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	position: relative;
 	width: 100%;
 	overflow: hidden;
@@ -961,10 +949,7 @@ _s(HeroSection, "PiEunt0iGHrchejGm6wW7wKZ698=", false, function() {
     ];
 });
 _c = HeroSection;
-const StyledHeroSection = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].section.withConfig({
-    displayName: "HeroSection__StyledHeroSection",
-    componentId: "sc-393e10c-0"
-})`
+const StyledHeroSection = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].section`
 	width: 100%;
 	height: fit-content;
 	display: flex;
@@ -1349,10 +1334,7 @@ const Card = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$n
 });
 _c1 = Card;
 Card.displayName = 'Card';
-const StyledCard = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "Card__StyledCard",
-    componentId: "sc-53ce4fb4-0"
-})`
+const StyledCard = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -1677,10 +1659,7 @@ _s(TrendSection, "f3LSdUE9Xv1uITBtA20jK3xr8ng=", false, function() {
     ];
 });
 _c = TrendSection;
-const StyledTrendSection = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].section.withConfig({
-    displayName: "TrendSection__StyledTrendSection",
-    componentId: "sc-8b558645-0"
-})`
+const StyledTrendSection = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].section`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1802,10 +1781,7 @@ const InputCheck = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f
     }, this);
 });
 _c1 = InputCheck;
-const StyledInputCheck = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "InputCheck__StyledInputCheck",
-    componentId: "sc-89aa6a05-0"
-})`
+const StyledInputCheck = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -2132,10 +2108,7 @@ _s(CardSlider, "OtZT4MWzoWCTYZgleZjSErkQUik=", false, function() {
     ];
 });
 _c = CardSlider;
-const StyledCardSlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div.withConfig({
-    displayName: "CardSlider__StyledCardSlider",
-    componentId: "sc-49b92312-0"
-})`
+const StyledCardSlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].div`
 	width: ${({ $type })=>$type === 'main' ? '100%' : 'calc(60% - 0.5rem)'};
 	height: fit-content;
 	flex: 1;
@@ -2447,10 +2420,7 @@ const SubscribeSection = ()=>{
 };
 _s(SubscribeSection, "KmS+J5COdyZ7xuNCrRYNHKInTu4=");
 _c = SubscribeSection;
-const StyledSubscribe = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].section.withConfig({
-    displayName: "SubscribeSection__StyledSubscribe",
-    componentId: "sc-9fdc864e-0"
-})`
+const StyledSubscribe = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].section`
 	width: 100%;
 	display: flex;
 	gap: 2rem;
@@ -2616,10 +2586,7 @@ _s(HomePage, "y8YnVhv90EUXkVBQMw+a3VcSFGM=", false, function() {
     ];
 });
 _c = HomePage;
-const StyledHomePage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].div.withConfig({
-    displayName: "page__StyledHomePage",
-    componentId: "sc-c0b63d1c-0"
-})`
+const StyledHomePage = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$components$2f$dist$2f$styled$2d$components$2e$browser$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["styled"].div`
 	width: 100%;
 	gap: 2rem;
 

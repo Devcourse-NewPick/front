@@ -2,26 +2,6 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
 	distDir: 'build',
-
-	// Webpack 설정
-	webpack: (config) => {
-		config.module.rules.push({
-			test: /\.svg$/i,
-			issuer: /\.[jt]sx?$/,
-			use: [
-				{
-					loader: '@svgr/webpack',
-					options: {
-						svgoConfig: {
-							plugins: [{ removeViewBox: false }],
-						},
-					},
-				},
-			],
-		});
-		return config;
-	},
-
 	// 이미지 설정
 	images: {
 		remotePatterns: [
@@ -30,10 +10,18 @@ const nextConfig: NextConfig = {
 				hostname: 'picsum.photos',
 				pathname: '/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'imgnews.pstatic.net',
+				pathname: '/**',
+			},
+			{
+				protocol: 'https',
+				hostname: 'lh3.googleusercontent.com',
+				pathname: '/**',
+			},
 		],
 	},
-
-	// 스타일 컴포넌트 설정
 	compiler: {
 		styledComponents: true,
 	},

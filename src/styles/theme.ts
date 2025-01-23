@@ -13,6 +13,8 @@ export type ColorKey =
 	| 'text' // 텍스트 색상
 	| 'subText' // 보조텍스트 색상
 	| 'neutral' // 옅은 그레이 색상
+	| 'lightGrey' // 밝은 그레이 색상
+	| 'mediumGrey' // 어두운 그레이 색상
 	| 'border'; // 테두리 색상
 
 export type HeadingSize = 'extraSmall' | 'small' | 'medium' | 'large' | 'extraLarge';
@@ -79,7 +81,7 @@ export const lightTheme: Theme = {
 	color: {
 		primary: '#3610e1',
 		secondary: '#5564F1',
-		tertiary: '#F4F1FF',
+		tertiary: '#f4f1ff',
 		background: '#FFFFFF',
 		surface: '#F9F9F9',
 		disabled: '#BDBDBD',
@@ -89,6 +91,8 @@ export const lightTheme: Theme = {
 		text: '#000000',
 		subText: '#808080',
 		neutral: '#F0F0F0',
+		mediumGrey: '#444444',
+		lightGrey: '#999999',
 		border: '#d9d9d9',
 	},
 	fontSize: {
@@ -185,8 +189,8 @@ export const lightTheme: Theme = {
 			border: '1px solid #3610e1',
 			fontWeight: '500',
 			hover: {
-				color: '#ffffff',
-				background: '#2705C0',
+				color: '#3610e1',
+				background: '#f4f1ff',
 			},
 		},
 		mono: {
@@ -257,8 +261,8 @@ export const darkTheme: Theme = {
 	color: {
 		primary: '#9ca9ff',
 		secondary: '#6980ff',
-		tertiary: '#0f1d7a',
 		background: '#121212',
+		tertiary: '#0f1d7a',
 		surface: '#1E1E1E',
 		disabled: '#555555',
 		success: '#66BB6A',
@@ -267,7 +271,9 @@ export const darkTheme: Theme = {
 		text: '#f1f1f1',
 		subText: '#a3a3a3',
 		neutral: '#2D2D2D',
-		border: '#333333',
+		mediumGrey: '#a3a3a3',
+		lightGrey: '#606060',
+		border: '#606060',
 	},
 	buttonScheme: {
 		primary: {

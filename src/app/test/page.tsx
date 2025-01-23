@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useToast } from '@/hooks/useToast';
 import { useModal } from '@/hooks/useModal';
 
 import styled from 'styled-components';
@@ -11,9 +12,10 @@ import InputText from '@/components/common/InputText';
 import InputCheck from '@/components/common/InputCheck';
 import InputSelect from '@/components/common/InputSelect';
 import InputDate from '@/components/common/InputDate';
-import Loader from '@/app/components/common/Loader';
+import Spinner from '@/components/common/Spinner';
 
 const TestPage = () => {
+	const { showToast, setPosition } = useToast();
 	const { isOpen, modalType, openModal, closeModal } = useModal();
 	const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 	const [isChecked, setIsChecked] = useState(false);
@@ -39,6 +41,32 @@ const TestPage = () => {
 			<h1>공통 컴포넌트 테스팅</h1>
 
 			<section>
+				<h2>Toast</h2>
+				<Button scheme="outline" onClick={() => showToast('정보 메시지입니다.', 'info')}>
+					Show Info Toast
+				</Button>
+				<br />
+				<Button scheme="primary" onClick={() => showToast('성공 메시지입니다!', 'success')}>
+					Show Success Toast
+				</Button>
+				<br />
+				<Button scheme="mono" onClick={() => showToast('경고 메시지입니다!', 'warning')}>
+					Show Warning Toast
+				</Button>
+				<br />
+				<Button scheme="danger" onClick={() => showToast('에러 발생!', 'error')}>
+					Show Error Toast
+				</Button>
+				<br />
+				<h3>위치 변경</h3>
+				<Button onClick={() => setPosition('top-left')}>Top Left</Button>
+				<Button onClick={() => setPosition('top-right')}>Top Right</Button>
+				<Button onClick={() => setPosition('bottom-left')}>Bottom Left</Button>
+				<Button onClick={() => setPosition('bottom-right')}>Bottom Right</Button>
+				<Button onClick={() => setPosition('center-bottom')}>Center Bottom</Button>
+			</section>
+
+			<section>
 				<h2>Modal</h2>
 				<Button onClick={() => openModal('test')}>Open Test Modal</Button>
 				{isOpen && modalType === 'test' && (
@@ -52,24 +80,10 @@ const TestPage = () => {
 			<hr />
 			<section>
 				<h2>Button</h2>
-				<h3>Primary</h3>
 				<Button scheme="primary" onClick={() => alert('Primary Button clicked!')}>
 					클릭
 				</Button>
-				<h3>Secondary</h3>
 				<Button scheme="secondary" onClick={() => alert('Secondary Button clicked!')}>
-					클릭
-				</Button>
-				<h3>Mono</h3>
-				<Button scheme="mono" onClick={() => alert('Mono Button clicked!')}>
-					클릭
-				</Button>
-				<h3>Mono Outline</h3>
-				<Button scheme="monoOutline" onClick={() => alert('Mono Outline Button clicked!')}>
-					클릭
-				</Button>
-				<h3>Danger</h3>
-				<Button scheme="danger" onClick={() => alert('Text Button clicked!')}>
 					클릭
 				</Button>
 			</section>
@@ -128,7 +142,7 @@ const TestPage = () => {
 			<hr />
 			<section>
 				<h2>Loader</h2>
-				<Loader />
+				<Spinner />
 			</section>
 		</StyledTestPage>
 	);
@@ -155,7 +169,7 @@ const StyledTestPage = styled.div`
 
 		p {
 			margin-top: 0.5rem;
-			color: ${({ theme }) => theme.color.subtext};
+			color: ${({ theme }) => theme.color.mediumGrey};
 		}
 	}
 

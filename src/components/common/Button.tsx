@@ -72,18 +72,7 @@ export const StyledButton = styled.button.withConfig({
 	background: ${({ theme, scheme }) => theme.buttonScheme[scheme ?? 'default'].background};
 	border: ${({ theme, scheme }) => theme.buttonScheme[scheme ?? 'default'].border};
 	border-radius: ${({ theme }) => theme.borderRadius.flat};
-  // &::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background: rgba(0, 0, 0, 0.3); /* 반투명 검은색 */
-	// 	opacity: ${({ disabled }) => (disabled ? 1 : 0)};
-	// 	transition: opacity 0.3s ease-in-out;
-	// }
-  opacity: ${({ disabled }) => (disabled ? 0.8 : 1)};
+	opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
 	pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
 	cursor: ${({ disabled }) => (disabled ? 'none' : 'pointer')};
 

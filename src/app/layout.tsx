@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import '@/styles/global';
 import StyledComponentsRegistry from '@/lib/registry';
 import Providers from '@/components/layout/Providers';
-import Layout from '@/components/layout/MainLayout';
 import ToastContainer from '@/components/common/toast/ToastContainer';
-import ModalContainer from '@/components/common/modal/ModalContainer';
+import Layout from '@/components/layout/MainLayout';
 
 export const metadata: Metadata = {
 	title: '뉴픽: NewPick',
@@ -26,7 +25,6 @@ export default function RootLayout({
 					<Providers>
 						<Layout>{children}</Layout>
 						<ToastContainer />
-						<ModalContainer />
 					</Providers>
 				</StyledComponentsRegistry>
 			</body>

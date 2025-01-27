@@ -1,19 +1,4 @@
-'use client';
-
 import styled, { keyframes } from 'styled-components';
-
-export default function Skeleton() {
-	return (
-		<LoaderContainer>
-			{Array.from({ length: 4 }).map((_, index) => (
-				<SkeletonCard key={index}>
-					<SkeletonImage />
-					<SkeletonText />
-				</SkeletonCard>
-			))}
-		</LoaderContainer>
-	);
-}
 
 // 로딩 애니메이션 효과
 const shimmer = keyframes`
@@ -55,3 +40,18 @@ const SkeletonText = styled.div`
 	margin: 10px auto;
 	border-radius: 4px;
 `;
+
+const Loader = () => {
+	return (
+		<LoaderContainer>
+			{Array.from({ length: 4 }).map((_, index) => (
+				<SkeletonCard key={index}>
+					<SkeletonImage />
+					<SkeletonText />
+				</SkeletonCard>
+			))}
+		</LoaderContainer>
+	);
+};
+
+export default Loader;

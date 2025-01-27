@@ -1,15 +1,25 @@
 import { create } from 'zustand';
 
-type ModalState = {
+interface ModalState {
+	modalType: string | null; // 활성화된 모달의 타입 (예: "login", "signup")
 	isOpen: boolean;
-	content: React.ReactNode | null;
-	openModal: (content: React.ReactNode) => void;
-	closeModal: () => void;
-};
+	openModal: (type: string) => void; // 모달 열기 함수
+	closeModal: () => void; // 모달 닫기 함수
+}
 
-export const useModalStore = create<ModalState>((set) => ({
+const useModalStore = create<ModalState>((set) => ({
+	modalType: null,
 	isOpen: false,
-	content: null,
-	openModal: (content) => set({ isOpen: true, content }),
-	closeModal: () => set({ isOpen: false, content: null }),
+	openModal: (type) =>
+		set({
+			isOpen: true,
+			modalType: type,
+		}),
+	closeModal: () =>
+		set({
+			isOpen: false,
+			modalType: null,
+		}),
 }));
+
+export default useModalStore;

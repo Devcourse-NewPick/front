@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Text from '@/components/common/Title';
+import Title from '@/components/common/Title';
 import Button from '@/components/common/Button';
 import Link from 'next/link';
 
@@ -13,7 +13,7 @@ interface NoContentsPageProps {
 function NoContentsPage({ text, btnText, onClick, moveTo }: NoContentsPageProps) {
 	return (
 		<NoContentsPageStyled>
-			<Text size="large">{text}</Text>
+			<Title size="medium">{text}</Title>
 			{moveTo ? (
 				<Link href={moveTo}>
 					<Button scheme="primary" size="medium" onClick={onClick}>

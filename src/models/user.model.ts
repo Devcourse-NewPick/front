@@ -1,16 +1,18 @@
 export interface User {
 	id: number;
-	role: 'user' | 'admin';
 	email: string;
 	username: string;
 	profileImg?: string;
+	accessToken: string | null;
+	isSubscribed: boolean;
 	interests?: string[];
-	// timezone?: string;
-	// frequency?: 'daily' | 'weekly' | 'monthly';
-	// notificationPreferences?: {
-	// 	email: boolean;
-	// 	web: boolean;
-	// };
-	// createdAt?: Date;
-	// updatedAt?: Date;
+	role: 'user' | 'admin';
+	frequency?: 'daily' | 'weekly' | 'monthly';
+	notificationPreferences?: {
+		email: boolean;
+		web: boolean;
+	};
+	timezone?: string;
+	createdAt?: Date;
+	updatedAt?: Date;
 }

@@ -10,47 +10,53 @@ import { useHeader } from '@/hooks/useHeader';
 
 import styled from 'styled-components';
 import { FaUserCircle } from 'react-icons/fa';
+import { IoLogoGoogle } from 'react-icons/io';
+
 import Logo from '@/components/common/Logo';
 import Image from '@/components/common/Image';
 import Button from '@/components/common/Button';
 import Modal from '@/components/common/modal/Modal';
 import Dropdown from '@/components/common/Dropdown';
+import Spinner from '@/components/common/loader/Spinner';
 import Navigation from '@/components/layout/header/Navigation';
 import Drawer from '@/components/layout/header/Drawer';
 import ThemeSwitcher from '@/components/layout/header/ThemeSwitcher';
-import Spinner from '../common/Spinner';
-import { IoLogoGoogle } from 'react-icons/io';
 
 const Header = () => {
-	const { user, login, logout, isLoading } = useAuth();
+	const { user, isLoading, handleLogin, handleLogout } = useAuth();
 	const { isHeaderOpen, setHeaderOpen } = useHeader();
 	const { closeDropdown } = useDropdown(['auth', 'sub-navigation', 'drawer']);
 	const { isOpen, modalType, openModal, closeModal } = useModal();
 	const lastScrollY = useRef(0);
 
 	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+
+			if (currentScrollY <= 0) {
+				setHeaderOpen(true);
+				return;
+			}
+
+			if (currentScrollY > lastScrollY.current) {
+				setHeaderOpen(false);
+				closeDropdown();
+			} else {
+				setHeaderOpen(true);
+			}
+
+			lastScrollY.current = currentScrollY;
+		};
+
 		if (typeof window !== 'undefined') {
-			const handleScroll = () => {
-				const currentScrollY = window.scrollY || document.documentElement.scrollTop || 0;
-
-				if (currentScrollY <= 0) {
-					setHeaderOpen(true);
-					return;
-				}
-
-				if (currentScrollY > lastScrollY.current) {
-					setHeaderOpen(false);
-					closeDropdown();
-				} else {
-					setHeaderOpen(true);
-				}
-
-				lastScrollY.current = currentScrollY;
-			};
-
 			window.addEventListener('scroll', handleScroll);
-			return () => window.removeEventListener('scroll', handleScroll);
 		}
+
+		return () => {
+			if (typeof window !== 'undefined') {
+				window.removeEventListener('scroll', handleScroll);
+			}
+		};
 	}, [setHeaderOpen, closeDropdown]);
 
 	return (
@@ -72,7 +78,7 @@ const Header = () => {
 							type="auth"
 							className="auth"
 							toggleButton={
-								user.profileImg ? (
+								user?.profileImg ? (
 									<StyledUserCircle>
 										<Image src={user.profileImg} alt="profile" ratio="square" />
 									</StyledUserCircle>
@@ -86,9 +92,9 @@ const Header = () => {
 							<>
 								<ThemeSwitcher className="item" />
 								<Link href="/mypage">
-									<Button className="item">내 정보</Button>
+									<Button className="item">마이페이지</Button>
 								</Link>
-								<Button className="item" onClick={logout}>
+								<Button className="item" onClick={handleLogout}>
 									로그아웃
 								</Button>
 							</>
@@ -98,7 +104,7 @@ const Header = () => {
 							<Button
 								scheme="outline"
 								style={{ width: '5rem' }}
-								onClick={login}
+								onClick={handleLogin}
 								icon={<IoLogoGoogle />}
 								iconPosition="left"
 								disabled={user !== null}

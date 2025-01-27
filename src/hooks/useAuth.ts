@@ -1,129 +1,157 @@
-'use client';
-
-import { useEffect, useState, useRef, useCallback } from 'react';
-import { flushSync } from 'react-dom';
-import { BASE_URL, API_ENDPOINTS } from '@/constants/api';
-import { POPUP } from '@/constants/numbers';
-import { AUTH_ERRORS } from '@/constants/errors';
+import { useEffect, useState } from 'react';
 import { User } from '@/models/user.model';
-import { useAuthStore } from '@/stores/authStore';
-import { useError } from '@/hooks/useError';
-import { useInterval } from '@/hooks/useInterval';
+import { API_URL, TOKEN, API_ENDPOINTS } from '@/constants/api';
+import { POPUP } from '@/constants/numbers';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useAuthStore } from '@/stores/useAuthStore';
+
+// 쿠키 값을 가져오는 함수
+const getCookieValue = (name: string): string | null => {
+	if (typeof document === 'undefined') return null;
+	return (
+		document.cookie
+			.split('; ')
+			.find((row) => row.startsWith(`${name}=`))
+			?.split('=')[1] || null
+	);
+};
+
+// 쿠키 설정 함수
+const setCookie = (name: string, value: string, maxAge: number) => {
+	document.cookie = `${name}=${value}; Path=/; Secure; SameSite=Strict; Max-Age=${maxAge}`;
+};
+
+// 쿠키 삭제 함수
+const deleteCookie = (name: string) => {
+	document.cookie = `${name}=; Path=/; Max-Age=0`;
+};
 
 export const useAuth = () => {
-	const { user, token, isLoading, setUser, setToken, setLoading, logout } = useAuthStore();
-	const { showError } = useError();
-	const [popup, setPopup] = useState<Window | null>(null);
-	const [popupCheckKey, setPopupCheckKey] = useState(0);
-	const hasFetchedUser = useRef(false);
-	const setLoadingRef = useRef(setLoading);
-	const [forceUpdate, setForceUpdate] = useState(0);
+	const { user, setUser, isLoading, setIsLoading } = useAuthStore();
+	// const {} = useSubscribe();
+	const queryClient = useQueryClient();
+	const [token, setToken] = useState<string | null>(null);
+	const [userId, setUserId] = useState<number | null>(null);
 
-	/** 로그아웃 */
-	const handleLogout = useCallback(() => {
-		localStorage.removeItem('authToken');
-		logout();
-		setForceUpdate((prev) => prev + 1); // 상태 강제 업데이트
-	}, [logout]);
-
-	/** 사용자 정보 가져오기 */
-	const fetchUser = useCallback(
-		async (authToken: string) => {
-			if (hasFetchedUser.current) return;
-			hasFetchedUser.current = true;
-			setLoadingRef.current(true);
-
-			try {
-				const response = await fetch(API_ENDPOINTS.AUTH.USER, {
-					method: 'GET',
-					headers: {
-						'Content-Type': 'application/json',
-						Authorization: `Bearer ${authToken}`,
-					},
-					credentials: 'include',
-				});
-
-				if (!response.ok) throw new Error(await response.text());
-
-				const userData: User = await response.json();
-				if (!userData) throw new Error(AUTH_ERRORS.FETCH_FAILED);
-
-				flushSync(() => {
-					setUser(userData);
-					setToken(authToken);
-				});
-				setForceUpdate((prev) => prev + 1);
-			} catch (error) {
-				showError((error as Error).message || AUTH_ERRORS.FETCH_FAILED);
-				handleLogout();
-			} finally {
-				setTimeout(() => setLoadingRef.current(false), 0);
-			}
-		},
-		[setUser, setToken, showError, handleLogout]
-	);
-
-	/** 앱 로드 시 저장된 토큰 확인 */
+	// 클라이언트에서만 쿠키 값을 가져오기
 	useEffect(() => {
-		const storedToken = localStorage.getItem('authToken');
-		if (!storedToken) {
-			setTimeout(() => setLoadingRef.current(false), 0);
-			return;
-		}
-		if (!user && !hasFetchedUser.current) {
-			fetchUser(storedToken);
-		}
-	}, [user, fetchUser]);
+		if (typeof window !== 'undefined') {
+			const storedToken = getCookieValue(TOKEN.ACCESS);
+			const storedUserId = getCookieValue(TOKEN.USER_ID);
+			const parsedUserId = storedUserId ? parseInt(storedUserId, 10) : null;
 
-	/** OAuth 로그인 */
-	const login = useCallback(() => {
-		const newPopup = window.open(API_ENDPOINTS.AUTH.LOGIN, '_blank', `width=${POPUP.WIDTH},height=${POPUP.HEIGHT}`);
-
-		if (!newPopup) {
-			showError(AUTH_ERRORS.POPUP_BLOCKED);
-			return;
-		}
-
-		setPopup(newPopup);
-		setPopupCheckKey((prev) => prev + 1);
-	}, [showError]);
-
-	/** OAuth 응답 메시지 핸들러 */
-	useEffect(() => {
-		const handleMessage = (event: MessageEvent) => {
-			if (event.origin !== BASE_URL) return;
-
-			if (event.data.type === 'oauthSuccess' && event.data.token) {
-				localStorage.setItem('authToken', event.data.token);
-				fetchUser(event.data.token);
+			if (storedToken && parsedUserId) {
+				setToken(storedToken);
+				setUserId(parsedUserId);
+				setIsLoading(true);
 			} else {
-				showError(AUTH_ERRORS.OAUTH_FAILED);
+				setUser(null);
+				setToken(null);
+				setUserId(null);
+				setIsLoading(false);
 			}
-		};
+		}
+	}, [setIsLoading, setUser]);
 
-		window.addEventListener('message', handleMessage);
-		return () => window.removeEventListener('message', handleMessage);
-	}, [fetchUser, showError]);
+	// 사용자 정보를 가져오는 비동기 함수
+	const fetchUser = async (): Promise<User | null> => {
+		if (!token || !userId) {
+			return null;
+		}
 
-	/** OAuth 팝업 닫힘 감지 */
-	useInterval(
-		() => {
-			if (popup?.closed) {
-				setPopup(null);
-				showError(AUTH_ERRORS.POPUP_CLOSED);
-			}
-		},
-		popup ? POPUP.CHECK_INTERVAL : null,
-		popupCheckKey
-	);
-
-	/** Zustand 상태 변경 감지 (즉시 반영) */
-	useEffect(() => {
-		const unsubscribe = useAuthStore.subscribe((state) => {
-			if (state.user) setForceUpdate((prev) => prev + 1);
+		const res = await fetch(API_ENDPOINTS.AUTH.USER(userId), {
+			method: 'GET',
+			credentials: 'include',
+			headers: {
+				'Content-Type': 'application/json',
+				Authorization: `Bearer ${token}`,
+			},
 		});
-		return () => unsubscribe();
-	}, []);
 
-	return { user, token, isLoading, login, logout: handleLogout, forceUpdate };
+		if (!res.ok) throw new Error('Failed to fetch user');
+		const userData = await res.json();
+
+		const subscriptionRes = await fetch(API_ENDPOINTS.SUBSCRIBERS.STATUS(userId), {
+			method: 'GET',
+			credentials: 'include',
+			headers: { 'Content-Type': 'application/json' },
+		});
+
+		if (!subscriptionRes.ok) throw new Error('Failed to fetch subscription status');
+		const subscriptionData = await subscriptionRes.json();
+
+		return { ...userData, isSubscribed: subscriptionData.active };
+	};
+
+	// `useQuery`를 활용하여 자동으로 사용자 정보 가져오기 (토큰이 존재하는 경우 실행)
+	const {
+		data: userData,
+		status: userStatus,
+		error: userError,
+	} = useQuery<User | null>({
+		queryKey: ['user'],
+		queryFn: fetchUser,
+		enabled: Boolean(token && userId),
+		staleTime: 1000 * 60 * 5,
+		retry: 1,
+	});
+
+	// 페이지 새로고침 후 로그인 유지 (사용자 정보 설정)
+	useEffect(() => {
+		if (userStatus === 'success' && userData) {
+			setUser(userData);
+			setIsLoading(false);
+		} else if (userStatus === 'error' || userError) {
+			setUser(null);
+			setIsLoading(false);
+		}
+	}, [userStatus, userData, setUser, userError, setIsLoading]);
+
+	// 로그인 핸들러 (Google OAuth)
+	const handleLogin = async () => {
+		window.open(API_ENDPOINTS.AUTH.LOGIN, '_blank', `width=${POPUP.WIDTH}, height=${POPUP.HEIGHT}`);
+
+		window.addEventListener('message', async (event) => {
+			if (event.origin !== API_URL) return;
+			if (event.data?.type === 'oauthSuccess') {
+				const { token, user } = event.data;
+
+				// 쿠키 저장 (`access_token` & `userId`)
+				setCookie(TOKEN.ACCESS, token, TOKEN.AGE);
+				setCookie(TOKEN.USER_ID, String(user.id), TOKEN.AGE);
+
+				// Zustand 상태 업데이트
+				setUser(user);
+				setToken(token);
+				setUserId(user.id);
+
+				queryClient.invalidateQueries({ queryKey: ['user'] });
+				queryClient.invalidateQueries({ queryKey: ['subscriptionStatus'] });
+			}
+		});
+	};
+
+	// 로그아웃 핸들러
+	const handleLogout = async () => {
+		// 쿠키 삭제
+		deleteCookie(TOKEN.ACCESS);
+		deleteCookie(TOKEN.USER_ID);
+
+		// Zustand 상태 초기화
+		setUser(null);
+		setToken(null);
+		setUserId(null);
+		setIsLoading(false);
+
+		await queryClient.invalidateQueries({ queryKey: ['user'] });
+		await queryClient.invalidateQueries({ queryKey: ['subscriptionStatus'] });
+
+		// 보호된 경로 리디렉션
+		const protectedRoutes = ['/mypage'];
+		if (protectedRoutes.includes(window.location.pathname)) {
+			window.location.href = '/';
+		}
+	};
+
+	return { user, isLoading, handleLogin, handleLogout };
 };

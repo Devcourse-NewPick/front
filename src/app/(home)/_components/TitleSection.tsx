@@ -5,7 +5,7 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { DEFAULT_IMAGES } from '@/constants/images';
 import { ArticleDetail as IArticleDetail } from '@/models/article.model';
-import { getFirstImage } from '@/utils/getFirstImage';
+import { getFirstImage, getRandomImage } from '@/utils/getFirstImage';
 
 import styled from 'styled-components';
 import { PCLogo } from '@/components/common/svg/LogoSVG';
@@ -50,7 +50,7 @@ function TitleSection({ className, firstArticles, secondArticles }: Props) {
 					<SwiperSlide key={article.id} className="swiper-slide">
 						<Link href={`/articles/detail/${article.id}`} className="image-link">
 							<Image
-								src={getFirstImage(article.imageUrl || '') || DEFAULT_IMAGES.MONO}
+								src={getRandomImage(article.imageUrl || '') || DEFAULT_IMAGES.MONO}
 								alt={article.title}
 								ratio="square"
 								className="image"
@@ -79,7 +79,7 @@ function TitleSection({ className, firstArticles, secondArticles }: Props) {
 					<SwiperSlide key={article.id} className="swiper-slide">
 						<Link href={`/articles/detail/${article.id}`} className="image-link">
 							<Image
-								src={getFirstImage(article.imageUrl || '') || DEFAULT_IMAGES.MONO}
+								src={getRandomImage(article.imageUrl || '') || DEFAULT_IMAGES.MONO}
 								alt={article.title}
 								ratio="square"
 								className="image"

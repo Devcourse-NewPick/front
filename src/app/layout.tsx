@@ -3,6 +3,7 @@ export const revalidate = 0;
 
 import type { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Script from 'next/script';
 import { ArticleDetail as IArticleDetail, ArticleSummary as IArticleSummary } from '@/models/article.model';
 import { fetchUserWithSubscription } from '@/api/user';
 import { fetchTrendList } from '@/api/article';
@@ -50,6 +51,8 @@ export default async function RootLayout({
 						<SpeedInsights />
 					</Providers>
 				</StyledComponentsRegistry>
+				{/* MacFolio 휴대폰 화면 안(iframe)에서 열릴 때 맨 위 색을 알려 준다. 혼자 열면 아무것도 하지 않는다 (public/macfolio-bar-color.js) */}
+				<Script src="/macfolio-bar-color.js" strategy="afterInteractive" />
 			</body>
 		</html>
 	);
